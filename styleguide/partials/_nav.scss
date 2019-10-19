@@ -4,23 +4,26 @@
 //test
 
 .cd-navigation {
+	font-family: 'Gaegu', cursive;
+	font-size: 1.2em;
 	a{
 		&:link{
-			color: $color-1;
+			color: $color-2;
 		}
-		
-		&:active{
-			color: $color-3;
+
+		&:visited{
+			color: $color-2;
 		}
-		
+
 		&:hover {
 			color: $color-3;
 			font-size: 1.25em;
 			transition: 1s;
 		}
 		
-		&:visited{
-			color: $color-4;
-		}
+		&:active{
+			color: $color-1;
+		}		
+		
 	}
-}
+} 

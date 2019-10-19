@@ -10,6 +10,7 @@
 
 // fonts & typography
 @import 'partials/typography';
+@import 'partials/nav';
 
 
 
@@ -52,10 +53,10 @@ header {
 .cd-logo {
   /* logo box style */
   background-color: $color-1;
-  width: 120px;
+  width: 50px;
 
   @include MQ(M) {
-    width: 180px;
+    width: 160px;
   }
 }
 
@@ -149,7 +150,7 @@ xButtons
 
 -------------------------------- */
 
-.btn {
+/*.btn {
   border: none;
   box-shadow: none;
   border-radius: 0.25em;
@@ -200,7 +201,7 @@ xButtons
   @include MQ(S) {
     font-size: 1.6rem;
   }
-}
+}*/
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
