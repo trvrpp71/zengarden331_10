@@ -47,7 +47,7 @@ header {
 .cd-logo {
   /* logo box style */
   background-color: $color-1;
-  width: 120px;
+  width: 50px;
 
   @include MQ(M) {
     width: 180px;
