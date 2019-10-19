@@ -11,13 +11,11 @@
 // fonts & typography
 @import 'partials/typography';
 
-//navigation
+//navigation lists (not main nav)
 @import 'partials/nav';
 
 /* -------------------------------- 
-
 xBackground 
-
 -------------------------------- */
 
 body {
@@ -26,9 +24,7 @@ body {
 }
 
 /* -------------------------------- 
-
 xPatterns
-
 -------------------------------- */
 
 .cd-box {
@@ -41,9 +37,7 @@ xPatterns
 }
 
 /* -------------------------------- 
-
-xNavigation 
-
+xNavigation (MAIN NAVIGATION)
 -------------------------------- */
 
 header {
@@ -53,10 +47,10 @@ header {
 .cd-logo {
   /* logo box style */
   background-color: $color-1;
-  width: 120px;
+  width: 50px;
 
   @include MQ(M) {
-    width: 180px;
+    width: 120px;
   }
 }
 
@@ -128,9 +122,7 @@ header {
 }
 
 /* -------------------------------- 
-
 xPage title 
-
 -------------------------------- */
 
 main > h1 {
