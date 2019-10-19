@@ -1,4 +1,4 @@
-_MACOSX
+__MACOSX
 node_modules
 *.css
 .cache
