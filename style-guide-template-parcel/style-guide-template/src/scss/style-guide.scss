@@ -11,13 +11,11 @@
 // fonts & typography
 @import 'partials/typography';
 
-//navigation
+//navigation lists (not main nav)
 @import 'partials/nav';
 
 /* -------------------------------- 
-
 xBackground 
-
 -------------------------------- */
 
 body {
@@ -26,9 +24,7 @@ body {
 }
 
 /* -------------------------------- 
-
 xPatterns
-
 -------------------------------- */
 
 .cd-box {
@@ -41,9 +37,7 @@ xPatterns
 }
 
 /* -------------------------------- 
-
-xNavigation 
-
+xNavigation (MAIN NAVIGATION)
 -------------------------------- */
 
 header {
@@ -128,9 +122,7 @@ header {
 }
 
 /* -------------------------------- 
-
 xPage title 
-
 -------------------------------- */
 
 main > h1 {
