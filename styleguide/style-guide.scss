@@ -213,7 +213,7 @@ xButtons
 xIcons 
 
 -------------------------------- */
-
+/*
 .cd-icons li {
   /* icons size */
   width: 32px;
@@ -225,7 +225,7 @@ xIcons
 xForm 
 
 -------------------------------- */
-
+/*
 input[type='text'],
 select {
   border: 1px solid $color-4;
@@ -275,7 +275,7 @@ input[type='checkbox'] {
   &::before,
   &::after {
     /* custom radio and check boxes */
-    content: '';
+ /*   content: '';
     display: block;
     width: 16px;
     height: 16px;
@@ -319,7 +319,7 @@ input[type='checkbox']:checked + label::after {
 
 .cd-select::after {
   /* switcher arrow for select element */
-  content: '';
+/*  content: '';
   position: absolute;
   z-index: 1;
   right: 14px;
@@ -337,6 +337,6 @@ select {
   padding: 0.6em 2em 0.6em 1em;
   cursor: pointer;
   @include appearance(none);
-}
+}*/
 
 @import 'partials/basic-style';
