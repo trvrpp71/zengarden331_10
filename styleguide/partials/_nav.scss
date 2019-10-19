@@ -23,4 +23,12 @@
 			color: $color-4;
 		}
 	}
+	ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	
+		li {
+			text-align: center;	
+		}	
+	}
 }
