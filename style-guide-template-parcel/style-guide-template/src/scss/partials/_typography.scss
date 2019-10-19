@@ -1,17 +1,9 @@
 /* -------------------------------- 
-
 xTypography 
-
 -------------------------------- */
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Gaegu', cursive;
 
-
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
 
 h1,
 h2 {
@@ -50,7 +42,7 @@ section > h2::before {
   color: darken($color-4, 15%);
 }
 
-p, ul, li {
+p {
   font-size: 1.2rem;
   line-height: 1.4;
   color: lighten($color-2, 25%);

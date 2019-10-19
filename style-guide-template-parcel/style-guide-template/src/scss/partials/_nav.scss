@@ -5,11 +5,11 @@
 
 .cd-navigation {
 	font-family: 'Gaegu', cursive;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	a{
 		&:link{
 			color: $color-2;
-			font-size: 1.4em;
+			font-size: 1.2em;
 			text-decoration: none;
 		}
 
@@ -19,8 +19,8 @@
 
 		&:hover {
 			color: $color-3;
-			font-size: 1.87em;
-			transition: 1s;
+			font-size: 1.6em;
+			transition: .5s;
 		}
 		
 		&:active{
