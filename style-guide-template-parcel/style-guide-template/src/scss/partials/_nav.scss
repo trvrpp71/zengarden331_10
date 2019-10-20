@@ -18,36 +18,7 @@
 
 
 //nav styling
-.cd-secondary-nav {
-	a{
-		
-		&:link{
-			color: $color-1;
-		}
-		
-		&:active{
-			color: $color-3;
-		}
-		
-		&:hover {
-			color: $color-3;
-			font-size: 1.25em;
-			transition: 1s;
-		}
-		
-		&:visited{
-			color: $color-4;
-		}
-	}
-	ul{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	
-		li {
-			text-align: center;	
-		}	
-	}
-}
+
 
 
 .cd-primary-nav {
@@ -55,20 +26,20 @@
 		&:link{
 			color: $color-1;
 		}
-		
-		&:active{
-			color: $color-3;
+
+		&:visited{
+			color: $color-1;
 		}
-		
+
 		&:hover {
 			color: $color-3;
 			font-size: 1.25em;
-			transition: 1s;
+			transition: .5s;
 		}
 		
-		&:visited{
-			color: $color-4;
-		}
+		&:active{
+			color: $color-2;
+		}		
 		
 	}
 	li{
@@ -120,4 +91,58 @@
 		
 	}
 	
+}
+.cd-secondary-nav {
+	a{
+		
+		&:link{
+			color: $color-1;
+		}
+
+		&:visited{
+			color: $color-1;
+		}
+
+		&:hover {
+			color: $color-3;
+			font-size: 1.25em;
+			transition: .5s;
+		}
+		
+		&:active{
+			color: $color-2;
+		}
+		
+	}
+	ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	
+		li {
+			text-align: center;	
+		}	
+	}
+}
+.cd-tertiary-nav {
+	a{
+		line-height: 1.4em;
+		&:link{
+			color: $color-1;
+		}
+
+		&:visited{
+			color: $color-1;
+		}
+
+		&:hover {
+			color: $color-3;
+			font-size: 1.25em;
+			transition: .5s;
+		}
+		
+		&:active{
+			color: $color-2;
+		}
+		
+	}
 }
