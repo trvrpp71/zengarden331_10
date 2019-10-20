@@ -1,39 +1,123 @@
 /* Scss Document */
 //NAVIGATION
-
 //test
 
-.cd-navigation {
-	font-family: 'Gaegu', cursive;
-	font-size: 1.2em;
+
+
+
+//mixin
+
+@mixin beforeimage {
+	width: 100%;
+	display: block;
+	margin: auto;
+	}
+	
+
+
+
+
+//nav styling
+.cd-secondary-nav {
 	a{
+		
 		&:link{
-			color: $color-2;
-			font-size: 1.2em;
-			text-decoration: none;
-		}
-
-		&:visited{
-			color: $color-2;
-		}
-
-		&:hover {
-			color: $color-3;
-			font-size: 1.6em;
-			transition: .5s;
+			color: $color-1;
 		}
 		
 		&:active{
-			color: $color-1;
-		}		
+			color: $color-3;
+		}
 		
+		&:hover {
+			color: $color-3;
+			font-size: 1.25em;
+			transition: 1s;
+		}
+		
+		&:visited{
+			color: $color-4;
+		}
 	}
-/*	ul{
+	ul{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	
 		li {
 			text-align: center;	
 		}	
-	}*/
+	}
+}
+
+
+.cd-primary-nav {
+	a{		
+		&:link{
+			color: $color-1;
+		}
+		
+		&:active{
+			color: $color-3;
+		}
+		
+		&:hover {
+			color: $color-3;
+			font-size: 1.25em;
+			transition: 1s;
+		}
+		
+		&:visited{
+			color: $color-4;
+		}
+		
+	}
+	li{
+		padding: 10px;
+		margin: 10px;
+		height: 100px;
+		text-align: center;
+		
+		&:nth-child(1):before {
+			content: url('../assets/images/mercury.png');
+			@include beforeimage;
+		}
+		
+		&:nth-child(2):before {
+			content: url('../assets/images/venus.png');
+			@include beforeimage;
+		}
+		
+		&:nth-child(3):before {
+			content: url('../assets/images/earth.png');
+			@include beforeimage;
+		}
+		
+		&:nth-child(4):before {
+			content: url('../assets/images/mars.png');
+			@include beforeimage;
+		}
+		
+		&:nth-child(5):before {
+			content: url('../assets/images/jupiter.png');
+			@include beforeimage;
+		}
+		/*
+		&:nth-child(6):before {
+			content: url('../assets/images/saturn.png');
+			@include beforeimage;
+		}
+		
+		&:nth-child(7):before {
+			content: url('../assets/images/uranus.png');
+			@include beforeimage;
+		}
+		
+		&:nth-child(8):before {
+			content: url('../assets/images/neptune.png');
+			@include beforeimage;
+		}*/
+		
+		
+	}
+	
 }
