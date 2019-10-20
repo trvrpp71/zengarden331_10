@@ -50,7 +50,7 @@ header {
   width: 50px;
 
   @include MQ(M) {
-    width: 120px;
+    width: 180px;
   }
 }
 
