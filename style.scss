@@ -1,0 +1,99 @@
+/* Scss Document */
+
+
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Montserrat&display=swap');
+
+@import 'partials/colors';
+
+// fonts & typography
+@import 'partials/typography';
+
+
+$border-radius:4px;
+$spacing:20px;
+$turquoise: #1abc9c;
+
+@media only screen and (min-width: 40em) {
+
+	.page-wrapper {
+		display: flex;
+		flex-flow: column wrap;
+}
+	.intro {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 1em;
+	}
+	
+	
+	.intro header {
+		grid-column-start: span 2;
+	}
+	
+	.intro .summary {
+		grid-column-start: 1;
+		
+	}
+	.intro .preamble {
+		grid-column-start: 1;
+		
+	}
+	
+	.main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;	
+		grid-gap: 1em;
+	}
+	
+	.main .explanation{
+		grid-column-start: span 2;
+	}
+	
+	.main .benefits {
+		grid-column-start: 1;
+		grid-row-start: 2;
+	}
+	
+	.main .participation {
+		grid-column-start: 2;
+	}
+	
+	.main .requirements {
+		grid-column-start: 3;
+	}
+	
+	.main footer {
+		grid-column-start: span 3;
+	}
+	
+	.sidebar {
+		position: absolute;
+		top: 122px;
+		right: 0;
+		max-width: 33vw;
+		margin: 0;
+	}
+	.participation, .benefits,.requirements{
+		padding:0px $spacing/2;
+		width:50%;
+	  }
+	  
+	  .participation, .benefits,.requirements{
+		p, p ~ p {
+		display:none;
+		}
+	  }
+	  
+	  .participation, .benefits, .requirements{
+		 &:hover{
+			 & > h3 {
+				color:red;
+			}
+			p, p ~ p {
+			 	display:block;
+		  	}
+		}
+	  }  
+	
+	
+}

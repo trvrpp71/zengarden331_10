@@ -1,0 +1,60 @@
+/* -------------------------------- 
+xTypography 
+-------------------------------- */
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Gaegu', cursive;
+
+
+h1,h2,h3 {
+  font-family: $secondary-font;
+  color: $color-2;
+}
+p {
+  font-family:$primary-font;
+}
+h1 {
+  font-size: 4.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+ /* @include MQ(S) {
+    font-size: 3.2rem;
+  }
+
+  @include MQ(M) {
+    font-size: 4rem;
+  }
+}*/
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+/*  @include MQ(S) {
+    font-size: 3.8rem;
+    margin: 1em 0 1.4em;
+  }
+}*/
+
+section > h2::before {
+  /* number before each section title */
+  color: darken($color-4, 15%);
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: lighten($color-2, 25%);
+
+  a {
+    color: $color-1;
+    text-decoration: underline;
+  }
+
+/*  @include MQ(S) {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }*/
+}
