@@ -20,13 +20,25 @@ h1 {
   margin: 0 0 0.4em;
 }
 
+/* @include MQ(S) {
+    font-size: 3.2rem;
+  }
 
+  @include MQ(M) {
+    font-size: 4rem;
+  }
+}*/
 h2 {
   font-weight: bold;
   text-transform: uppercase;
   margin: 1em 0;
 }
 
+/*  @include MQ(S) {
+    font-size: 3.8rem;
+    margin: 1em 0 1.4em;
+  }
+}*/
 section > h2::before {
   /* number before each section title */
   color: #1e1e1e;
@@ -36,13 +48,23 @@ p {
   font-size: 1.2rem;
   line-height: 1.4;
   color: #8ea0cf;
-
+  /*  @include MQ(S) {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }*/
 }
 p a {
   color: #a3b3d8;
   text-decoration: underline;
 }
 
+@media screen and (max-width: 39.9em) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
 @media only screen and (min-width: 40em) {
   .page-wrapper {
     display: flex;
@@ -101,22 +123,16 @@ p a {
     max-width: 33vw;
     margin: 0;
   }
+}
+.participation p, .participation p ~ p, .benefits p, .benefits p ~ p, .requirements p, .requirements p ~ p {
+  display: none;
+}
 
-  .participation, .benefits, .requirements {
-    padding: 0px 10px;
-    width: 50%;
-  }
-
-  .participation p, .participation p ~ p, .benefits p, .benefits p ~ p, .requirements p, .requirements p ~ p {
-    display: none;
-  }
-
-  .participation:hover > h3, .benefits:hover > h3, .requirements:hover > h3 {
-    color: red;
-  }
-  .participation:hover p, .participation:hover p ~ p, .benefits:hover p, .benefits:hover p ~ p, .requirements:hover p, .requirements:hover p ~ p {
-    display: block;
-  }
+.participation:hover > h3, .benefits:hover > h3, .requirements:hover > h3 {
+  color: red;
+}
+.participation:hover p, .participation:hover p ~ p, .benefits:hover p, .benefits:hover p ~ p, .requirements:hover p, .requirements:hover p ~ p {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

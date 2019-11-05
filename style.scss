@@ -13,12 +13,21 @@ $border-radius:4px;
 $spacing:20px;
 $turquoise: #1abc9c;
 
+@media screen and (max-width:39.9em){
+	.main {
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:repeat(3,1fr);
+	}
+}
+
+
 @media only screen and (min-width: 40em) {
 
 	.page-wrapper {
 		display: flex;
 		flex-flow: column wrap;
-}
+	}
 	.intro {
 		display: grid;
 		grid-template-columns: 2fr 1fr;
@@ -73,27 +82,21 @@ $turquoise: #1abc9c;
 		max-width: 33vw;
 		margin: 0;
 	}
-	.participation, .benefits,.requirements{
-		padding:0px $spacing/2;
-		width:50%;
-	  }
-	  
-	  .participation, .benefits,.requirements{
-		p, p ~ p {
-		display:none;
-		}
-	  }
-	  
-	  .participation, .benefits, .requirements{
-		 &:hover{
-			 & > h3 {
-				color:red;
-			}
-			p, p ~ p {
-			 	display:block;
-		  	}
-		}
-	  }  
-	
-	
 }
+
+.participation, .benefits,.requirements{
+	p, p ~ p {
+		display:none;
+	}
+}
+
+.participation, .benefits, .requirements{
+	&:hover{
+		& > h3 {
+		color:red;
+	}
+	p, p ~ p {
+			display:block;
+		}
+	}
+}  
