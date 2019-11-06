@@ -59,10 +59,24 @@ p a {
 }
 
 @media screen and (max-width: 39.9em) {
-  .main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+  .pagewrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .explanation h3 {
+    text-align: center;
+    border: 1px solid red;
+  }
+  .explanation p, .explanation p ~ p {
+    display: none;
+  }
+
+  .explanation:hover > h3 {
+    color: red;
+  }
+  .explanation:hover p, .explanation:hover p ~ p {
+    display: block;
   }
 }
 @media only screen and (min-width: 40em) {
@@ -123,6 +137,10 @@ p a {
     max-width: 33vw;
     margin: 0;
   }
+}
+.participation h3, .benefits h3, .requirements h3 {
+  text-align: center;
+  border: 1px solid red;
 }
 .participation p, .participation p ~ p, .benefits p, .benefits p ~ p, .requirements p, .requirements p ~ p {
   display: none;
