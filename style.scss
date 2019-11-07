@@ -44,7 +44,7 @@ $turquoise: #1abc9c;
 	}
 
 	.explanation, .design-archives, .zen-resources {
-		&:hover, &:active {
+		&:hover, &:focus {
 			& > h3 {
 			color:$color-3;
 		}
@@ -174,7 +174,7 @@ $turquoise: #1abc9c;
 .participation, .benefits,.requirements{
 	h3 {
 		text-align:center;
-		border:1px solid red;
+		border:1px solid $color-3;
 	}
 
 	p, p ~ p {
@@ -183,9 +183,9 @@ $turquoise: #1abc9c;
 }
 
 .participation, .benefits, .requirements{
-	&:hover{
+	&:hover, &:focus{
 		& > h3 {
-		color:red;
+		color:$color-3;
 	}
 	p, p ~ p {
 			display:block;

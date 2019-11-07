@@ -86,10 +86,10 @@ p a {
     display: none;
   }
 
-  .explanation:hover > h3, .explanation:active > h3, .design-archives:hover > h3, .design-archives:active > h3, .zen-resources:hover > h3, .zen-resources:active > h3 {
+  .explanation:hover > h3, .explanation:focus > h3, .design-archives:hover > h3, .design-archives:focus > h3, .zen-resources:hover > h3, .zen-resources:focus > h3 {
     color: #e2648f;
   }
-  .explanation:hover ul, .explanation:hover p, .explanation:hover p ~ p, .explanation:active ul, .explanation:active p, .explanation:active p ~ p, .design-archives:hover ul, .design-archives:hover p, .design-archives:hover p ~ p, .design-archives:active ul, .design-archives:active p, .design-archives:active p ~ p, .zen-resources:hover ul, .zen-resources:hover p, .zen-resources:hover p ~ p, .zen-resources:active ul, .zen-resources:active p, .zen-resources:active p ~ p {
+  .explanation:hover ul, .explanation:hover p, .explanation:hover p ~ p, .explanation:focus ul, .explanation:focus p, .explanation:focus p ~ p, .design-archives:hover ul, .design-archives:hover p, .design-archives:hover p ~ p, .design-archives:focus ul, .design-archives:focus p, .design-archives:focus p ~ p, .zen-resources:hover ul, .zen-resources:hover p, .zen-resources:hover p ~ p, .zen-resources:focus ul, .zen-resources:focus p, .zen-resources:focus p ~ p {
     display: block;
   }
 }
@@ -207,16 +207,16 @@ p a {
 }
 .participation h3, .benefits h3, .requirements h3 {
   text-align: center;
-  border: 1px solid red;
+  border: 1px solid #e2648f;
 }
 .participation p, .participation p ~ p, .benefits p, .benefits p ~ p, .requirements p, .requirements p ~ p {
   display: none;
 }
 
-.participation:hover > h3, .benefits:hover > h3, .requirements:hover > h3 {
-  color: red;
+.participation:hover > h3, .participation:focus > h3, .benefits:hover > h3, .benefits:focus > h3, .requirements:hover > h3, .requirements:focus > h3 {
+  color: #e2648f;
 }
-.participation:hover p, .participation:hover p ~ p, .benefits:hover p, .benefits:hover p ~ p, .requirements:hover p, .requirements:hover p ~ p {
+.participation:hover p, .participation:hover p ~ p, .participation:focus p, .participation:focus p ~ p, .benefits:hover p, .benefits:hover p ~ p, .benefits:focus p, .benefits:focus p ~ p, .requirements:hover p, .requirements:hover p ~ p, .requirements:focus p, .requirements:focus p ~ p {
   display: block;
 }
 
