@@ -6,21 +6,18 @@ xTypography
 -------------------------------- */
 h1, h2, h3 {
   font-family: "Gaegu", cursive;
-  color: #425b9c;
-}
+  color: #425b9c; }
 
 p {
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: "Montserrat", sans-serif; }
 
 h1 {
   font-size: 4.4rem;
   font-weight: 300;
   line-height: 1.2;
-  margin: 0 0 0.4em;
-}
+  margin: 0 0 0.4em; }
 
-/* @include MQ(S) {
+ /* @include MQ(S) {
     font-size: 3.2rem;
   }
 
@@ -31,8 +28,7 @@ h1 {
 h2 {
   font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0;
-}
+  margin: 1em 0; }
 
 /*  @include MQ(S) {
     font-size: 3.8rem;
@@ -41,8 +37,7 @@ h2 {
 }*/
 section > h2::before {
   /* number before each section title */
-  color: #1e1e1e;
-}
+  color: #1e1e1e; }
 
 p {
   font-size: 1.2rem;
@@ -51,106 +46,98 @@ p {
   /*  @include MQ(S) {
       font-size: 1.4rem;
       line-height: 1.4;
-    }*/
-}
-p a {
-  color: #a3b3d8;
-  text-decoration: underline;
-}
+    }*/ }
+  p a {
+    color: #a3b3d8;
+    text-decoration: underline; }
 
 @media screen and (max-width: 39.9em) {
   .pagewrapper {
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .explanation h3 {
     text-align: center;
-    border: 1px solid red;
-  }
+    border: 1px solid red; }
   .explanation p, .explanation p ~ p {
-    display: none;
-  }
+    display: none; }
 
   .explanation:hover > h3 {
-    color: red;
-  }
+    color: red; }
   .explanation:hover p, .explanation:hover p ~ p {
-    display: block;
-  }
-}
+    display: block; } }
 @media only screen and (min-width: 40em) {
   .page-wrapper {
     display: flex;
-    flex-flow: column wrap;
-  }
+    flex-flow: column wrap; }
 
   .intro {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 1em;
-  }
+    grid-gap: 1em; }
 
   .intro header {
-    grid-column-start: span 2;
-  }
+    grid-column-start: span 2; }
 
   .intro .summary {
-    grid-column-start: 1;
-  }
+    grid-column-start: 1; }
 
   .intro .preamble {
-    grid-column-start: 1;
-  }
+    grid-column-start: 1; }
 
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
-  }
+    grid-gap: 1em; }
 
   .main .explanation {
-    grid-column-start: span 2;
-  }
+    grid-column-start: span 2; }
 
   .main .benefits {
     grid-column-start: 1;
-    grid-row-start: 2;
-  }
+    grid-row-start: 2; }
 
   .main .participation {
-    grid-column-start: 2;
-  }
+    grid-column-start: 2; }
 
   .main .requirements {
-    grid-column-start: 3;
-  }
+    grid-column-start: 3; }
 
   .main footer {
-    grid-column-start: span 3;
-  }
+    grid-column-start: span 3; }
 
   .sidebar {
     position: absolute;
     top: 122px;
     right: 0;
     max-width: 33vw;
-    margin: 0;
-  }
-}
+    margin: 0; } }
 .participation h3, .benefits h3, .requirements h3 {
   text-align: center;
-  border: 1px solid red;
-}
+  border: 1px solid red; }
 .participation p, .participation p ~ p, .benefits p, .benefits p ~ p, .requirements p, .requirements p ~ p {
-  display: none;
-}
+  display: none; }
 
 .participation:hover > h3, .benefits:hover > h3, .requirements:hover > h3 {
-  color: red;
-}
+  color: red; }
 .participation:hover p, .participation:hover p ~ p, .benefits:hover p, .benefits:hover p ~ p, .requirements:hover p, .requirements:hover p ~ p {
-  display: block;
-}
+  display: block; }
+
+footer {
+  text-align: center;
+  font-family: "Gaegu", cursive;
+  font-size: 1.4rem; }
+  footer a:link {
+    color: #425b9c;
+    text-decoration: none; }
+  footer a:visited {
+    color: #425b9c; }
+  footer a:hover {
+    color: #e2648f; }
+  footer a:active {
+    color: #444444; }
+
+.zen-validate-html:after, .zen-license:after, .zen-validate-css:after, .zen-accessibility:after {
+  content: "                |                "; }
 
 /*# sourceMappingURL=style.css.map */
