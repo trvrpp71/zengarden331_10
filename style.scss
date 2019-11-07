@@ -14,6 +14,9 @@ $spacing:20px;
 $turquoise: #1abc9c;
 
 @media screen and (max-width:39.9em){
+	menu {
+		cursor: pointer;
+	}
 	.pagewrapper {
 		display:flex;
 		flex-direction: column;

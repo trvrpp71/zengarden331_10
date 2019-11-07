@@ -59,6 +59,10 @@ p a {
 }
 
 @media screen and (max-width: 39.9em) {
+  menu {
+    cursor: pointer;
+  }
+
   .pagewrapper {
     display: flex;
     flex-direction: column;
