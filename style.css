@@ -56,6 +56,16 @@ p {
     display: flex;
     flex-direction: column; }
 
+  .intro header {
+    background-image: url("assets/images/logo-ver-1-sm.jpg");
+    height: 350px;
+    background-position: left top; }
+    .intro header h1 {
+      padding-top: 5%; }
+    .intro header h1, .intro header h2 {
+      color: #ffffff;
+      text-align: center; }
+
   .explanation h3 {
     text-align: center;
     border: 1px solid red; }
@@ -74,16 +84,18 @@ p {
   .intro {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 1em;
-    background-color: #ffffff; }
+    grid-gap: 1em; }
 
   .intro header {
     position: relative;
     grid-column-start: span 2;
     padding: 5%;
-    background-color: #425b9c;
-    height: 500px;
+    background-image: url("assets/images/background1.png");
+    height: 350px;
+    text-align: center;
     overflow: hidden; }
+    .intro header h1, .intro header h2 {
+      color: white; }
 
   .intro h1:before {
     content: "";

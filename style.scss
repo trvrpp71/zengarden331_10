@@ -18,6 +18,18 @@ $turquoise: #1abc9c;
 		display:flex;
 		flex-direction: column;
 	}
+	.intro header {
+		background-image: url('assets/images/logo-ver-1-sm.jpg');
+		height: 350px;
+		background-position: left top;
+		h1 {
+			padding-top: 5%;
+		}
+		h1, h2 {
+			color: $color-5;
+			text-align: center;
+		}
+	}
 	//accordian style text boxes below for the explanation section
 	.explanation {
 		h3 {
@@ -54,16 +66,20 @@ $turquoise: #1abc9c;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		grid-gap: 1em;
-		background-color: $color-5;
+		
 	}	
 	
 	.intro header {
 		position: relative;
 		grid-column-start: span 2;
 		padding: 5%;
-		background-color: $color-2;
-		height: 500px;
+		background-image: url('assets/images/background1.png');
+		height: 350px;
+		text-align: center;
 		overflow: hidden;
+		h1, h2 {
+			color: white;
+		}
 	}
 
 	.intro h1:before {
@@ -85,7 +101,7 @@ $turquoise: #1abc9c;
 			transform: rotate(360deg);
 		  }
 		}
-	
+		
 	.intro .summary {
 		grid-column-start: 1;
 		margin: 0 2% 0 0;
