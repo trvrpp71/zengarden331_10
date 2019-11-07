@@ -74,16 +74,44 @@ p {
   .intro {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 1em; }
+    grid-gap: 1em;
+    background-color: #ffffff; }
 
   .intro header {
-    grid-column-start: span 2; }
+    position: relative;
+    grid-column-start: span 2;
+    padding: 5%;
+    background-color: #425b9c;
+    height: 500px;
+    overflow: hidden; }
 
+  .intro h1:before {
+    content: "";
+    height: 1700px;
+    width: 1700px;
+    background-image: url("assets/images/SolarSystem.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -600px;
+    left: -690px;
+    animation: rotate 30s infinite linear; }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(360deg); } }
   .intro .summary {
-    grid-column-start: 1; }
+    grid-column-start: 1;
+    margin: 0 2% 0 0;
+    padding: 4%;
+    background: lightgrey; }
 
   .intro .preamble {
-    grid-column-start: 1; }
+    grid-column-start: 1;
+    margin: 0 2% 0 0;
+    padding: 4%;
+    background: lightgrey; }
 
   .main {
     display: grid;
@@ -108,10 +136,20 @@ p {
 
   .sidebar {
     position: absolute;
-    top: 122px;
-    right: 0;
+    top: 575px;
+    right: 20px;
     max-width: 33vw;
-    margin: 0; } }
+    margin: 7% 1% 1% 10%;
+    padding: 1%;
+    border: #444444 solid; }
+    .sidebar a:link {
+      font-family: "Montserrat", sans-serif;
+      text-decoration: none;
+      color: #444444; }
+    .sidebar a:hover {
+      color: #e2648f; }
+    .sidebar a:active {
+      color: #425b9c; } }
 .participation h3, .benefits h3, .requirements h3 {
   text-align: center;
   border: 1px solid red; }
