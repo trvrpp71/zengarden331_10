@@ -59,10 +59,6 @@ p a {
 }
 
 @media screen and (max-width: 39.9em) {
-  body {
-    cursor: pointer;
-  }
-
   .pagewrapper {
     display: flex;
     flex-direction: column;
@@ -81,7 +77,8 @@ p a {
     text-shadow: 2px 2px 5px #e2648f;
     text-align: center;
   }
-
+}
+@media screen and (max-width: 39.9em) and (-moz-touch-enabled: 0), screen and (max-width: 39.9em) and (pointer: fine) {
   .explanation h3, .design-archives h3, .zen-resources h3 {
     text-align: center;
     border: 1px solid #e2648f;
