@@ -64,6 +64,7 @@ p {
       padding-top: 5%; }
     .intro header h1, .intro header h2 {
       color: #ffffff;
+      text-shadow: 2px 2px 5px #e2648f;
       text-align: center; }
 
   .explanation h3 {
@@ -95,7 +96,8 @@ p {
     text-align: center;
     overflow: hidden; }
     .intro header h1, .intro header h2 {
-      color: white; }
+      color: white;
+      text-shadow: 2px 2px 5px #e2648f; }
 
   .intro h1:before {
     content: "";
