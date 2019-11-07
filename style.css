@@ -153,14 +153,15 @@ p {
 
   .sidebar {
     position: absolute;
+    font-family: "Montserrat", sans-serif;
     top: 575px;
     right: 20px;
     max-width: 33vw;
     margin: 7% 1% 1% 10%;
     padding: 1%;
-    background: white; }
+    background: white;
+    line-height: 200%; }
     .sidebar a:link {
-      font-family: "Montserrat", sans-serif;
       text-decoration: none;
       color: #444444; }
     .sidebar a:hover {

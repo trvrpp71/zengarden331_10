@@ -148,14 +148,15 @@ $turquoise: #1abc9c;
 	
 	.sidebar {
 		position: absolute;
+		font-family: $primary-font;
 		top: 575px;
 		right: 20px;
 		max-width: 33vw;
 		margin: 7% 1% 1% 10%;
 		padding: 1%;
 		background: white;
-		a:link {
-			font-family: $primary-font;
+		line-height: 200%;
+		a:link {			
 			text-decoration: none;
 			color: $color-4;
 		}
