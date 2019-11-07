@@ -32,23 +32,23 @@ $turquoise: #1abc9c;
 		}
 	}
 	//accordian style text boxes below for the explanation section
-	.explanation {
+	.explanation, .design-archives, .zen-resources {
 		h3 {
 			text-align:center;
-			border:1px solid red;
+			border:1px solid $color-3;
 		}
-
-		p, p ~ p {
+		
+		ul, p, p ~ p {
 			display:none;
 		}
 	}
 
-	.explanation {
+	.explanation, .design-archives, .zen-resources {
 		&:hover{
 			& > h3 {
-			color:red;
+			color:$color-3;
 		}
-		p, p ~ p {
+		ul,p, p ~ p {
 				display:block;
 			}
 		}
