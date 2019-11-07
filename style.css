@@ -86,10 +86,10 @@ p a {
     display: none;
   }
 
-  .explanation:hover > h3, .design-archives:hover > h3, .zen-resources:hover > h3 {
+  .explanation:hover > h3, .explanation:active > h3, .design-archives:hover > h3, .design-archives:active > h3, .zen-resources:hover > h3, .zen-resources:active > h3 {
     color: #e2648f;
   }
-  .explanation:hover ul, .explanation:hover p, .explanation:hover p ~ p, .design-archives:hover ul, .design-archives:hover p, .design-archives:hover p ~ p, .zen-resources:hover ul, .zen-resources:hover p, .zen-resources:hover p ~ p {
+  .explanation:hover ul, .explanation:hover p, .explanation:hover p ~ p, .explanation:active ul, .explanation:active p, .explanation:active p ~ p, .design-archives:hover ul, .design-archives:hover p, .design-archives:hover p ~ p, .design-archives:active ul, .design-archives:active p, .design-archives:active p ~ p, .zen-resources:hover ul, .zen-resources:hover p, .zen-resources:hover p ~ p, .zen-resources:active ul, .zen-resources:active p, .zen-resources:active p ~ p {
     display: block;
   }
 }

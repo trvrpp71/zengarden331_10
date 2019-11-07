@@ -44,7 +44,7 @@ $turquoise: #1abc9c;
 	}
 
 	.explanation, .design-archives, .zen-resources {
-		&:hover{
+		&:hover, &:active {
 			& > h3 {
 			color:$color-3;
 		}
