@@ -14,6 +14,7 @@ $spacing:20px;
 $turquoise: #1abc9c;
 
 @media screen and (max-width:39.9em){
+
 	.pagewrapper {
 		display:flex;
 		flex-direction: column;
@@ -31,29 +32,30 @@ $turquoise: #1abc9c;
 			text-align: center;
 		}
 	}
-	//accordian style text boxes below for the explanation section
-	.explanation {
-		h3 {
-			text-align:center;
-			border:1px solid red;
-		}
-
-		p, p ~ p {
-			display:none;
-		}
-	}
-
-	.explanation {
-		&:hover{
-			& > h3 {
-			color:red;
-		}
-		p, p ~ p {
-				display:block;
+	@media (-moz-touch-enabled: 0), (pointer:fine) {
+		//accordian style text boxes below for the explanation section
+		.explanation, .design-archives, .zen-resources {
+			h3 {
+				text-align:center;
+				border:1px solid $color-3;
+			}
+			
+			ul, p, p ~ p {
+				display:none;
 			}
 		}
-	} 
 
+		.explanation, .design-archives, .zen-resources {
+			&:hover, &:focus {
+				& > h3 {
+				color:$color-3;
+			}
+			ul,p, p ~ p {
+					display:block;
+				}
+			}
+		} 
+	}
 }
 
 
@@ -174,7 +176,7 @@ $turquoise: #1abc9c;
 .participation, .benefits,.requirements{
 	h3 {
 		text-align:center;
-		border:1px solid red;
+		border:1px solid $color-3;
 	}
 
 	p, p ~ p {
@@ -183,9 +185,9 @@ $turquoise: #1abc9c;
 }
 
 .participation, .benefits, .requirements{
-	&:hover{
+	&:hover, &:focus{
 		& > h3 {
-		color:red;
+		color:$color-3;
 	}
 	p, p ~ p {
 			display:block;
