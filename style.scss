@@ -58,8 +58,9 @@ $turquoise: #1abc9c;
 		}	
 
 		.explanation, .design-archives, .zen-resources, .design-selection {
+			cursor: pointer;
 			&:hover, &:focus{
-				cursor: pointer;
+				
 				& > h3 {
 				color:$color-3;
 				}
