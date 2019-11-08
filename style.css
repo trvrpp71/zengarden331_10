@@ -111,15 +111,14 @@ p a {
     display: block;
   }
 
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
+  /*.wrapper {
+  	display:flex;
+  	flex-direction:row;
+  	align-content: space-between;
   }
-
-  .design-selection, .design-archives, .zen-resources {
-    flex: 1 0 auto;
-  }
+  .design-selection,.design-archives,.zen-resources {
+  	flex:1 0 auto;
+  }*/
 }
 @media only screen and (min-width: 40em) {
   .page-wrapper {
