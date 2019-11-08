@@ -40,10 +40,10 @@ $turquoise: #1abc9c;
 	}
 	
 		//accordian style text boxes below for the explanation section
-		.design-archives, .zen-resources, .design-selection {
+		/*.design-archives, .zen-resources, .design-selection {
 			font-size:80%;
 			font-style: italic;
-		}
+		}*/
 
 		.explanation, .design-archives, .zen-resources, .design-selection {
 			h3 {
@@ -96,7 +96,7 @@ $turquoise: #1abc9c;
 		position: relative;
 		grid-column-start: span 2;
 		padding: 5%;
-		background-image: url('assets/images/background1.png');
+		background-image: url('assets/images/stars.jpg');
 		background-size: cover;
 		height: 350px;
 		text-align: center;
