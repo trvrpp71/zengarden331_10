@@ -77,6 +77,29 @@ p {
     color: #e2648f; }
   .explanation:hover ul, .explanation:hover p, .explanation:hover p ~ p, .explanation:focus ul, .explanation:focus p, .explanation:focus p ~ p, .design-archives:hover ul, .design-archives:hover p, .design-archives:hover p ~ p, .design-archives:focus ul, .design-archives:focus p, .design-archives:focus p ~ p, .zen-resources:hover ul, .zen-resources:hover p, .zen-resources:hover p ~ p, .zen-resources:focus ul, .zen-resources:focus p, .zen-resources:focus p ~ p {
     display: block; } }
+@media screen and (max-width: 39.9em) {
+  .supporting {
+    display: flex;
+    flex-direction: column; }
+
+  .participation {
+    order: 4;
+    -webkit-order: 4; }
+
+  .benefits {
+    order: 3;
+    -webkit-order: 3; }
+
+  .requirements {
+    order: 5;
+    webkit-order: 5; }
+
+  footer {
+    order: 120;
+    -webkit-order: 120;
+    /*position: absolute; 
+    bottom: 0;*/
+    border: solid yellow; } }
 @media only screen and (min-width: 40em) {
   .page-wrapper {
     display: flex;
@@ -136,6 +159,7 @@ p {
   .main .explanation {
     grid-column-start: span 2;
     background: #f2f2f2;
+    margin: 0 2.5% 0 0;
     padding: 4%; }
 
   .main .benefits {

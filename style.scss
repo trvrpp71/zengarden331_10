@@ -56,6 +56,29 @@ $turquoise: #1abc9c;
 			}
 		} 
 	}
+	.supporting {
+		display: flex;
+		flex-direction: column;
+	}
+	.participation {
+		order: 4;
+		-webkit-order: 4;
+	}
+	.benefits {
+		order: 3;
+		-webkit-order: 3;
+	}
+	.requirements {
+		order: 5;
+		webkit-order: 5;
+	}
+	footer {
+		order: 120;
+		-webkit-order: 120;
+		/*position: absolute; 
+		bottom: 0;*/
+		border: solid yellow;
+	}
 }
 
 
@@ -128,6 +151,7 @@ $turquoise: #1abc9c;
 	.main .explanation{
 		grid-column-start: span 2;
 		background: #f2f2f2;
+		margin: 0 2.5% 0 0;
 		padding: 4%;
 	}
 	
