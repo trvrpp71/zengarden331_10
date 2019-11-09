@@ -1,6 +1,5 @@
 /* Scss Document */
 
-
 @import url('https://fonts.googleapis.com/css?family=Gaegu|Montserrat&display=swap');
 
 @import 'partials/colors';
@@ -8,10 +7,8 @@
 // fonts & typography
 @import 'partials/typography';
 
-
 $border-radius:4px;
 $spacing:20px;
-$turquoise: #1abc9c;
 
 @media screen and (max-width:39.9em){
 
@@ -28,7 +25,7 @@ $turquoise: #1abc9c;
 	.intro header {
 		background-image: url('assets/images/logo-ver-1-sm.jpg');
 		height: 350px;
-		background-position: left top;
+		background-size: cover;
 		h1 {
 			padding-top: 5%;
 		}
@@ -90,84 +87,70 @@ $turquoise: #1abc9c;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		grid-gap: 1em;
-	}	
-	
-	.intro header {
-		position: relative;
-		grid-column-start: span 2;
-		padding: 5%;
-		background-image: url('assets/images/stars.jpg');
-		background-size: cover;
-		height: 350px;
-		text-align: center;
-		overflow: hidden;
-		h1, h2 {
-			color: white;
-			text-shadow: 2px 2px 5px $color-3;
+		header {
+			position: relative;
+			grid-column-start: span 2;
+			padding: 5%;
+			background-image: url('assets/images/stars.jpg');
+			background-size: cover;
+			height: 350px;
+			text-align: center;
+			overflow: hidden;
+			h1, h2 {
+				color: white;
+				text-shadow: 2px 2px 5px $color-3;
+			}
 		}
-	}
-
-	.intro h1:before {
-		content: "";
-		height: 1700px;
-		width: 1700px;
-		background-image: url('assets/images/SolarSystemFL.png');
-		background-repeat: no-repeat;
-		position: absolute;
-		top: -600px;
-		left: -690px;
-		animation: rotate 30s infinite linear;
-	  }
-	  @keyframes rotate {
-		  0% {
-			transform: rotate(0deg);
-		  }    
-		  100% {
-			transform: rotate(360deg);
+		h1:before {
+			content: "";
+			height: 1700px;
+			width: 1700px;
+			background-image: url('assets/images/SolarSystemFL.png');
+			background-repeat: no-repeat;
+			position: absolute;
+			top: -600px;
+			left: -690px;
+			animation: rotate 30s infinite linear;
 		  }
-		}
-		
-	.intro .summary {
-		grid-column-start: 1;
-		margin: 0 2% 0 0;
-		padding: 4%;
-		background: #f2f2f2;
-	}
-	.intro .preamble {
-		grid-column-start: 1;
-		margin: 0 2% 0 0;
-		padding: 4%;
-		background: #f2f2f2;
+		  @keyframes rotate {
+			  0% {
+				transform: rotate(0deg);
+			  }    
+			  100% {
+				transform: rotate(360deg);
+			  }
+			}	
+		.summary, .preamble {
+			grid-column-start: 1;
+			margin: 0 2% 0 0;
+			padding: 4%;
+			background: #f2f2f2;
+		}	
 	}
 	
 	.main {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;	
 		grid-gap: 1em;
-	}
-	
-	.main .explanation{
-		grid-column-start: span 2;
-		background: #f2f2f2;
-		margin: 0 2.5% 0 0;
-		padding: 4%;
-	}
-	
-	.main .benefits {
-		grid-column-start: 1;
-		grid-row-start: 2;
-	}
-	
-	.main .participation {
-		grid-column-start: 2;
-	}
-	
-	.main .requirements {
-		grid-column-start: 3;
-	}
-	
-	.main footer {
-		grid-column-start: span 3;
+		.explanation{
+			grid-column-start: span 2;
+			background: #f2f2f2;
+			margin: 0 2.5% 0 0;
+			padding: 4%;
+		}
+		.benefits {
+			grid-column-start: 1;
+			grid-row-start: 2;
+		}
+		.participation {
+			grid-column-start: 2;
+		}
+		.requirements {
+			grid-column-start: 3;
+		}
+		footer {
+			grid-column-start: span 3;
+		}
 	}
 	
 	.sidebar {
@@ -192,7 +175,6 @@ $turquoise: #1abc9c;
 		}
 	}
 }
-
 
 //accordian style text boxes below
 .participation, .benefits,.requirements{
