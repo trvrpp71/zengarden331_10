@@ -54,7 +54,8 @@ p {
 @media screen and (max-width: 39.9em) {
   .page-wrapper {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: center; }
 
   .intro {
     order: 1; }
