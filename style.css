@@ -67,7 +67,7 @@ p {
     order: 2; }
 
   .intro header {
-    background-image: url("assets/images/logo-ver-1-sm.jpg");
+    background-image: url("assets/images/small-header.jpg");
     height: 350px;
     background-size: cover; }
     .intro header h1 {
