@@ -10,6 +10,11 @@
 $border-radius:4px;
 $spacing:20px;
 
+body {
+	background: url("assets/images/starsbg.jpg");
+	background-size: auto;
+}
+
 @media screen and (max-width:39.9em){
 
 	.page-wrapper {
@@ -91,8 +96,8 @@ $spacing:20px;
 		header {
 			position: relative;
 			grid-column-start: span 2;
-			background-image: url('assets/images/stars.jpg');
-			background-size: cover;
+			/*background-image: url('assets/images/stars.jpg');
+			background-size: cover;*/
 			height: 400px;
 			text-align: center;
 			overflow: hidden;
