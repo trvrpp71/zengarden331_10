@@ -161,7 +161,7 @@ $spacing:20px;
 		font-family: $primary-font;
 		top: 575px;
 		right: 20px;
-		max-width: 33vw;
+		max-width: 26vw;
 		margin: 7% 1% 1% 10%;
 		padding: 1%;
 		background: white;
@@ -224,4 +224,10 @@ footer {
 
 .zen-validate-html:after, .zen-license:after, .zen-validate-css:after, .zen-accessibility:after {
 	content: "                |                ";
+}
+
+//Test Area
+
+.benefits h3:before {
+	
 }
