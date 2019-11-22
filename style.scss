@@ -71,6 +71,7 @@ body {
 			}
 		} 
 		
+
 	/*.wrapper {
 		display:flex;
 		flex-direction:row;
@@ -183,6 +184,13 @@ body {
 			color: $color-2;
 		}
 	}
+	
+	#zen-supporting {
+	background: url("assets/images/black-hole.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 75%;
+}
 }
 
 //accordian style text boxes below
@@ -208,6 +216,8 @@ body {
 		}
 	}
 } 
+
+
 //FOOTER----------------------------------------
 footer {
 	text-align: center;
@@ -226,6 +236,7 @@ footer {
 	a:active {
 		color: $color-4;
 	}
+	
 }
 
 .zen-validate-html:after, .zen-license:after, .zen-validate-css:after, .zen-accessibility:after {
