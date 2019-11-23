@@ -1,0 +1,68 @@
+/* Scss Document */
+@media only screen and (min-width: 40em) {
+  .page-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .intro {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;
+  }
+  .intro header {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+  }
+  .intro .summary {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+  .intro .preamble {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .main .explanation {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+  }
+  .main .benefits {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .main .participation {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  .main .requirements {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+  }
+  .main footer {
+    -ms-grid-column: span 3;
+        grid-column-start: span 3;
+  }
+  .sidebar {
+    position: absolute;
+    top: 122px;
+    right: 0;
+    max-width: 33vw;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
