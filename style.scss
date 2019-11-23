@@ -11,168 +11,309 @@ $border-radius:4px;
 $spacing:20px;
 
 body {
+	margin: 0;
+	box-sizing: border-box;
 	background: url("assets/images/starsbg.jpg");
 	background-size: auto;
 }
 
-@media screen and (max-width:39.9em){
-
-	.page-wrapper {
-		display:flex;
-		flex-direction: column;
+.page-wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	@media screen and (max-width: 39.9em) {
 		text-align: center;
-	}
-
-	.intro {order:1;}
-	.main {order:3;}
-	.sidebar {order:2;}
-
-
-	.intro header {
-		background-image: url('assets/images/small-header.png');
-		height: 400px;
-		background-size: cover;
-		h1 {
-			padding-top: 5%;
+	}	
+	@media screen and (min-width: 40em){
+	}	
+	.intro {
+		
+		@media screen and (max-width: 39.9em) { 
+			order:1;
 		}
-		h1, h2 {
-			color: $color-5;
-			text-shadow: 2px 2px 5px $color-3;
-			text-align: center;
+		@media screen and (min-width: 40em) {
+			
 		}
-	}
-	
-		//accordian style text boxes below for the explanation section
-		/*.design-archives, .zen-resources, .design-selection {
-			font-size:80%;
-			font-style: italic;
-		}*/
+		header {
+			@media screen and (max-width: 39.9em) {
+				background-image: url('assets/images/small-header.png');
+				height: 400px;
+				background-size: cover;
+				h1 {
+					padding-top: 5%;
+				}	
+				h1, h2 {
+					color: $color-5;
+					text-shadow: 2px 2px 5px $color-3;
+					text-align: center;
+				}
+			} //end header small view	
+			@media screen and (min-width: 40em) {
+				position: relative;
+				height: 400px;
+				text-align: center;
+				overflow: hidden;
+				h1 {
+					margin: 50px 0 0 0;
+					//z-index: 100; *does nothing
+					&:before {
+						content: "";
+						//z-index: 1; *does nothing
+						height: 1700px;
+						width: 1700px;
+						background-image: url('assets/images/SolarSystemFaceless.png');
+						background-repeat: no-repeat;
+						position: absolute;
+						top: -600px; 
+						left: -690px;
+						animation: rotate 30s infinite linear;
+					}
+					@keyframes rotate {
+						0% {
+						transform: rotate(0deg);
+						}    
+						100% {
+						transform: rotate(360deg);
+						}
+					}
+				} //end h1 large view
+			} //end header large view	
+		} //end header
+			.summary, .preamble {
+				@media screen and (max-width: 39.9em) {
+					width: 90vw;
+					margin: 2% auto;
+					padding: 1%;
+					background: #f2f2f2;
+					opacity: .8;
+					border-radius: 10px;
+				}
+				@media screen and (min-width: 40em) {
+					display: inline-block;
+					width: 60vw;
+					margin: 0 1% 1% 1%;
+					padding: 1% 3%;
+					background: #f2f2f2;
+					opacity: .8;
+					border-radius: 10px;
+				}
+			} //end .summary, .preamble									
+	} //end .intro				
 
-		.explanation, .design-archives, .zen-resources, .design-selection {
-			h3 {
+	.main {
+		display: flex;
+		//margin: 0;
+		@media screen and (max-width: 39.9em) {
+			flex-direction: column;
+			order: 3;
+			width: 90vw;
+			margin: 0 auto;
+		}	
+		@media screen and (min-width: 40em) {			
+			flex-wrap: wrap;
+			background: url("assets/images/black-hole.png");
+			//background-size: contain;
+			background-repeat: no-repeat;
+			background-position: 50% 75vh;
+		}	
+		.explanation {
+			@media screen and (max-width: 39.9em) {
+				width: 90vw;
+				margin: 0 auto;
+				h3 {  //accordian style text boxes below		
+					text-align:center;
+					border:1px solid $color-3;
+					background-color: white;
+					opacity: .8;
+					border-radius: 10px;
+					padding: 2%;				
+				}
+				ul, p, p ~ p {					
+					display:none;
+				}	
+				&:hover, &:focus {
+					& > h3 {
+						color:$color-3;
+					}
+					ul, p, p ~ p {
+						display:block;
+						background-color: white;
+						opacity: .8;
+						border-radius: 10px;
+						padding: 2%;
+					}
+				}			
+			} //end .explanation small view			
+			@media screen and (min-width: 40em) {
+				
+				order: 1;
+				width: 60vw;
+				background: #f2f2f2;
+				opacity: .8;
+				border-radius: 10px;
+				margin: .15% 1% 5% 1%;
+				padding: 1% 35vw 1% 3%;
+			} //end .explanation large view		
+		} //end .explanation		
+		.participation {			
+			h3 { //accordian style text boxes below
 				text-align:center;
 				border:1px solid $color-3;
-				border-radius:5px;
+				background-color: white;
+				opacity: .8;
+				border-radius: 10px;
+				padding: 2%;
 			}
-			
-			ul, p, p ~ p {
+			p, p ~ p {
 				display:none;
 			}
-		}	
-
-		.explanation, .design-archives, .zen-resources, .design-selection {
 			&:hover, &:focus{
 				& > h3 {
 				color:$color-3;
 				}
-				ul, p, p ~ p {
+				p, p ~ p {
 					display:block;
+					background-color: white;
+					opacity: .8;
+					border-radius: 10px;
+					padding: 2%;
 				}
 			}
-		} 
-		
-
-	/*.wrapper {
-		display:flex;
-		flex-direction:row;
-		align-content: space-between;
-	}
-	.design-selection,.design-archives,.zen-resources {
-		flex:1 0 auto;
-	}*/
-	
-}
-
-
-@media only screen and (min-width: 40em) {
-
-	
-	.page-wrapper {
-		display: flex;
-		flex-flow: column wrap;
-	}
-	.intro {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-		grid-gap: 1em;
-		header {
-			position: relative;
-			grid-column-start: span 2;
-			/*background-image: url('assets/images/stars.jpg');
-			background-size: cover;*/
-			height: 400px;
-			text-align: center;
-			overflow: hidden;
-			h1, h2 {
-				color: white;
-				text-shadow: 2px 2px 5px $color-3;
+			@media screen and (max-width: 39.9em) {
+				width: 90vw;
+				margin: 0 auto;
 			}
-			h1 {
-				margin-top: 50px;
-			}
-		}
-		h1:before {
-			content: "";
-			height: 1700px;
-			width: 1700px;
-			background-image: url('assets/images/SolarSystemFaceless.png');
-			background-repeat: no-repeat;
-			position: absolute;
-			top: -600px;
-			left: -690px;
-			animation: rotate 30s infinite linear;
-		  }
-		  @keyframes rotate {
-			  0% {
-				transform: rotate(0deg);
-			  }    
-			  100% {
-				transform: rotate(360deg);
-			  }
-			}	
-		.summary, .preamble {
-			grid-column-start: 1;
-			margin: 0 2% 0 0;
-			padding: 4%;
-			background: #f2f2f2;
-		}	
-	}
-	
-	.main {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;	
-		grid-gap: 1em;
-		.explanation{
-			grid-column-start: span 2;
-			background: #f2f2f2;
-			margin: 0 2.5% 0 0;
-			padding: 4%;
-		}
+			@media screen and (min-width: 40em) {
+				order: 3;
+				width: 31vw;
+				margin: 0 1.5% 0 1.5%;
+			} //end .participation large view	
+		} //end .participation
 		.benefits {
-			grid-column-start: 1;
-			grid-row-start: 2;
-		}
-		.participation {
-			grid-column-start: 2;
-		}
+			h3 { //accordian style text boxes below
+				text-align:center;
+				border:1px solid $color-3;
+				background-color: white;
+				opacity: .8;
+				border-radius: 10px;
+				padding: 2%;
+			}
+			p, p ~ p {
+				display:none;
+			}
+			&:hover, &:focus{
+				& > h3 {
+				color:$color-3;
+				}
+				p, p ~ p {
+					display:block;
+					background-color: white;
+					opacity: .8;
+					border-radius: 10px;
+					padding: 2%;
+				}
+			}
+			@media screen and (max-width: 39.9em) {
+				width: 90vw;
+				margin: 0 auto;
+			}
+			@media screen and (min-width: 40em) {
+				order: 2;
+				width: 31vw;
+				margin: 0 0 0 1%;
+			} //end .benefits large view
+		} //end .benefits
 		.requirements {
-			grid-column-start: 3;
-		}
+			h3 {
+				text-align:center;
+				border:1px solid $color-3;
+				background-color: white;
+				opacity: .8;
+				border-radius: 10px;
+				padding: 2%;
+			}
+			p, p ~ p {
+				display:none;
+			}
+			&:hover, &:focus{
+				& > h3 {
+				color:$color-3;
+				}
+				p, p ~ p {
+					display:block;
+					background-color: white;
+					opacity: .8;
+					border-radius: 10px;
+					padding: 2%;
+				}
+			}
+			@media screen and (max-width: 39.9em) {
+				width: 90vw;
+				margin: 0 auto;
+			}
+			@media screen and (min-width: 40em){
+				order: 4;
+				width: 31vw;
+			} //end .requirements large view
+		} //end .requirements
 		footer {
-			grid-column-start: span 3;
-		}
-	}
-	
+			order: 4;
+			display: flex;
+			justify-content: center;
+			font-family: $secondary-font;
+			font-size: 1.4rem;
+			background: white;
+			opacity: .8;
+			border:1px solid $color-3;
+			border-radius: 20px 20px 0 0;
+			a:link {
+				color: $color-2;
+				text-decoration: none;
+			}
+			a:visited {
+				color: $color-2;
+			}
+			a:hover {
+				color: $color-3;
+			}
+			a:active {
+				color: $color-4;
+			}
+			@media screen and (max-width: 39.9em) {
+				width: 85vw;
+				margin: 0 auto;
+				padding: 3%;
+				
+				.zen-validate-html {
+					padding-right: 1em;
+					border-right: solid 2px $color-2;
+				} 
+				.zen-license, .zen-validate-css, .zen-accessibility {
+					padding-right: 1em;
+					padding-left: 1em;
+					border-right: solid 2px $color-2;
+				} 
+				.zen-github {
+					padding-left: 1em;
+				}
+			}
+			@media screen and (min-width: 40em) {
+				width: 95vw;
+				margin: 150vh auto 0 auto;
+				padding: 1%;
+				.zen-validate-html, .zen-license, .zen-validate-css, .zen-accessibility {
+					padding-left: 2em;
+					padding-right: 2em;
+					border-right: solid 2px $color-2;
+				} 
+				.zen-github {
+					padding-left: 2em;
+					padding-right: 2em;
+				}
+			} //end footer large view (no small view code)
+		} //end footer
+	} //end .main
 	.sidebar {
-		position: absolute;
-		font-family: $primary-font;
-		top: 575px;
-		right: 20px;
-		max-width: 26vw;
-		margin: 7% 1% 1% 10%;
-		padding: 1%;
-		background: white;
-		line-height: 200%;
+		
 		a:link {			
 			text-decoration: none;
 			color: $color-4;
@@ -181,70 +322,239 @@ body {
 			color: $color-3;
 		}
 		a:active {
-			color: $color-2;
+			color: $color-1;
 		}
-	}
-	
-	#zen-supporting {
-	background: url("assets/images/black-hole.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 50% 75%;
-}
-}
-
-//accordian style text boxes below
-.participation, .benefits,.requirements{
-	h3 {
-		text-align:center;
-		border:1px solid $color-3;
-		border-radius:5px;
-	}
-
-	p, p ~ p {
-		display:none;
-	}
-}
-
-.participation, .benefits, .requirements{
-	&:hover, &:focus{
-		& > h3 {
-		color:$color-3;
+		@media screen and (max-width: 39.9em) {
+			order:2;
+			width: 90vw;
+			margin: 0 auto;
+		}	
+		@media screen and (min-width: 40em) {
+			font-family: $primary-font;
+			padding: 5%;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 400px;
+				right: 0vw;
+				width: 29.5vw;
+				height: 755px;
+				background: $color-2;				
+				border-radius: 10px 0 0 10px;
+				//box-shadow: 5px 10px 10px black;				
+			}
 		}
-		p, p ~ p {
-			display:block;
+		@media screen and (min-width: 41em) {
+			&:before {
+				background: orange;
+				height: 730px;
+			}	
 		}
-	}
-} 
-
-
-//FOOTER----------------------------------------
-footer {
-	text-align: center;
-	font-family: $secondary-font;
-	font-size: 1.4rem;
-	a:link {
-		color: $color-2;
-		text-decoration: none;
-	}
-	a:visited {
-		color: $color-2;
-	}
-	a:hover {
-		color: $color-3;
-	}
-	a:active {
-		color: $color-4;
-	}
+		@media screen and (min-width: 43em) {
+			&:before {
+				background: pink;
+				width: 30vw;
+				height: 707px;
+			}	
+		}
+		@media screen and (min-width: 46.25em) {
+			&:before {
+				background: purple;
+				//width: 30vw;
+				height: 680px;
+			}	
+		}
+		@media screen and (min-width: 46.75em) {
+			&:before {
+				background: fuchsia;
+				height: 655px;
+			}	
+		}
+		/*@media screen and (min-width: 48em) {
+			&:before {
+				background: olive;
+				height: 76.25vh;
+			}	
+		}*/
+		@media screen and (min-width: 48.6em) {
+			&:before {
+				background: aqua;
+				width: 30.25vw;
+				height: 632px;
+			}	
+		}
+		@media screen and (min-width: 55.65em) {
+			&:before {
+				background: green;
+				width: 30.5vw;
+				height: 610px;
+			}	
+		}
+		@media screen and (min-width: 55.8em) {
+			&:before {
+				background: red;
+				height: 585px;
+			}	
+		}	
+		@media screen and (min-width: 65.85em) {
+			&:before {
+				background: teal;
+				height: 570px;
+			}	
+		}
+		@media screen and (min-width: 71.8em) {
+			&:before {
+				background: coral;
+				height: 545px;
+			}	
+		}	
+		@media screen and (min-width: 77em) {
+			&:before {
+				background: lime;
+				height: 525px;
+			}	
+		}	
+		@media screen and (min-width: 81.5em) {
+			&:before {
+				background: grey;
+				height: 500px;
+			}	
+		}	
+		@media screen and (min-width: 95em) {
+			&:before {
+				background: grey;
+				height: 510px;
+			}	
+		}
+		.wrapper {
+			@media screen and (max-width: 39.9em) {
+				
+			}	
+			@media screen and (min-width: 40em) {
+				width: 45vw;
+				position: absolute;
+				top: 420px;
+				padding-left: 65vw;
+			}
+			@media screen and (min-width: 46em) {
+				width: 48vw;
+				top: 410px;
+				padding-left: 63vw;
+			}
+			@media screen and (min-width: 60.5em) {
+				width: 45vw;
+				top: 430px;
+				padding-left: 65vw;
+			}
+			.design-selection {
+				
+				@media screen and (max-width: 39.9em) {
+					h3 {
+						text-align:center;
+						border:1px solid $color-5;
+						background-color: white;
+						opacity: .8;
+						border-radius: 10px;
+						padding: 2%;
+					}					
+					ul, p, p ~ p {
+						display:none;
+					}
+					&:hover, &:focus{
+						& > h3 {
+						color:$color-3;
+						}
+						ul, p, p ~ p {
+							display:block;
+							background-color: white;
+							opacity: .8;
+							border-radius: 10px;
+							padding: 2%;
+						}
+					}
+				} //end .design-selection small view
+				@media screen and (min-width: 40em) {
+					.select { //h3
+						color: $color-5;
+						margin: 0 5%;
+					}
+					width: 27vw;
+				}	
+			} //end .design-selection
+			.design-archives {				
+				@media screen and (max-width:39.9em){
+					h3 {
+						text-align:center;
+						border:1px solid $color-5;
+						background-color: white;
+						opacity: .8;
+						border-radius: 10px;
+						padding: 2%;
+					}					
+					ul, p, p ~ p {
+						display:none;						
+					}
+					&:hover, &:focus{
+						& > h3 {
+						color:$color-3;
+						}
+						ul, p, p ~ p {
+							display:block;
+							background-color: white;
+							opacity: .8;
+							border-radius: 10px;
+							padding: 2%;
+						}
+					}
+				}	//end .design-archives small view
+				@media screen and (min-width: 40em) {
+					width: 27vw;
+					.archives { //h3
+						color: $color-5;
+						margin: 0 5%;
+					}
+				} //end .design-archives large view
+			} //end .design-archives
+			.zen-resources {
+				@media screen and (max-width:39.9em){
+					h3 {
+						text-align:center;
+						border:1px solid $color-5;
+						background-color: white;
+						opacity: .8;
+						border-radius: 10px;
+						padding: 2%;
+					}
+					
+					ul, p, p ~ p {
+						display:none;
+					}
+					&:hover, &:focus{
+						& > h3 {
+						color:$color-3;
+						}
+						ul, p, p ~ p {
+							display:block;
+							background-color: white;
+							opacity: .8;
+							border-radius: 10px;
+							padding: 2%;
+						}
+					}
+				} //end .zen-resources small view
+				@media screen and (min-width: 40em) {
+					width: 27vw;
+					.resources { //h3
+						color: $color-5;
+						margin: 0 5%;
+					}
+				}
+			} //end .zen-resources
+		} //end .wrapper		
+	} //end .sidebar
+} //end .page-wrapper
 	
-}
 
-.zen-validate-html:after, .zen-license:after, .zen-validate-css:after, .zen-accessibility:after {
-	content: "                |                ";
-}
 
-//Test Area
 
-.benefits h3:before {
-	
-}
+
