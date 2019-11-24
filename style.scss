@@ -23,30 +23,19 @@ body {
 	background-position: 1px 3px;
 	padding-left: 15px;
 	
-	&:first-child {
+	&:nth-child(3n+1) {
 		background-image: url("assets/images/smercury.png")
 	}
-	&:nth-child(2) {
+	&:nth-child(3n+2) {
 		background-image: url("assets/images/svenus.png")
 	}
-	&:nth-child(3) {
+	&:nth-child(3n+3) {
 		background-image: url("assets/images/searth.png")
 	}
-	&:nth-child(4) {
+	&:nth-child(3n+4) {
 		background-image: url("assets/images/smars.png")
 	}
-	&:nth-child(5) {
-		background-image: url("assets/images/sjupiter.png")
-	}
-	&:nth-child(6) {
-		background-image: url("assets/images/ssaturn.png")
-	}
-	&:nth-child(7) {
-		background-image: url("assets/images/suranus.png")
-	}
-	&:nth-child(8) {
-		background-image: url("assets/images/sneptune.png")
-	}
+	
 }
 
 .page-wrapper {
