@@ -49,11 +49,10 @@ p {
   line-height: 1.4;
   color: #8ea0cf;
   /*  @include MQ(S) {
-    font-size: 1.4rem;
-    line-height: 1.4;
-  }*/
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }*/
 }
-
 p a {
   color: #a3b3d8;
   text-decoration: underline;
@@ -61,36 +60,25 @@ p a {
 
 body {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: url("assets/images/starsbg.jpg");
   background-size: auto;
 }
 
 .page-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .intro {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .intro header {
     background-image: url("assets/images/small-header.png");
@@ -106,7 +94,6 @@ body {
     text-align: center;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .intro header {
     position: relative;
@@ -126,42 +113,27 @@ body {
     position: absolute;
     top: -600px;
     left: -690px;
-    -webkit-animation: rotate 30s infinite linear;
-            animation: rotate 30s infinite linear;
-  }
-  @-webkit-keyframes rotate {
-    0% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
+    animation: rotate 30s infinite linear;
   }
   @keyframes rotate {
     0% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
+      transform: rotate(360deg);
     }
   }
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .intro .summary, .page-wrapper .intro .preamble {
     width: 90vw;
     margin: 2% auto;
     padding: 1%;
     background: #f2f2f2;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .intro .summary, .page-wrapper .intro .preamble {
     display: inline-block;
@@ -169,41 +141,29 @@ body {
     margin: 0 1% 1% 1%;
     padding: 1% 3%;
     background: #f2f2f2;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
   }
 }
-
 .page-wrapper .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    flex-direction: column;
+    order: 3;
     width: 90vw;
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .main {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     background: url("assets/images/black-hole.png");
     background-repeat: no-repeat;
     background-position: 50% 75vh;
   }
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main .explanation {
     width: 90vw;
@@ -213,7 +173,7 @@ body {
     text-align: center;
     border: 1px solid #e2648f;
     background-color: white;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
     padding: 2%;
   }
@@ -226,186 +186,147 @@ body {
   .page-wrapper .main .explanation:hover ul, .page-wrapper .main .explanation:hover p, .page-wrapper .main .explanation:hover p ~ p, .page-wrapper .main .explanation:focus ul, .page-wrapper .main .explanation:focus p, .page-wrapper .main .explanation:focus p ~ p {
     display: block;
     background-color: white;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
     padding: 2%;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .main .explanation {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
     width: 60vw;
     background: #f2f2f2;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
-    margin: .15% 1% 5% 1%;
+    margin: 0.15% 1% 5% 1%;
     padding: 1% 35vw 1% 3%;
   }
 }
-
 .page-wrapper .main .participation h3 {
   text-align: center;
   border: 1px solid #e2648f;
   background-color: white;
-  opacity: .8;
+  opacity: 0.8;
   border-radius: 10px;
   padding: 2%;
 }
-
 .page-wrapper .main .participation p, .page-wrapper .main .participation p ~ p {
   display: none;
 }
-
 .page-wrapper .main .participation:hover > h3, .page-wrapper .main .participation:focus > h3 {
   color: #e2648f;
 }
-
 .page-wrapper .main .participation:hover p, .page-wrapper .main .participation:hover p ~ p, .page-wrapper .main .participation:focus p, .page-wrapper .main .participation:focus p ~ p {
   display: block;
   background-color: white;
-  opacity: .8;
+  opacity: 0.8;
   border-radius: 10px;
   padding: 2%;
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main .participation {
     width: 90vw;
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .main .participation {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
     width: 31vw;
     margin: 0 1.5% 0 1.5%;
   }
 }
-
 .page-wrapper .main .benefits h3 {
   text-align: center;
   border: 1px solid #e2648f;
   background-color: white;
-  opacity: .8;
+  opacity: 0.8;
   border-radius: 10px;
   padding: 2%;
 }
-
 .page-wrapper .main .benefits p, .page-wrapper .main .benefits p ~ p {
   display: none;
 }
-
 .page-wrapper .main .benefits:hover > h3, .page-wrapper .main .benefits:focus > h3 {
   color: #e2648f;
 }
-
 .page-wrapper .main .benefits:hover p, .page-wrapper .main .benefits:hover p ~ p, .page-wrapper .main .benefits:focus p, .page-wrapper .main .benefits:focus p ~ p {
   display: block;
   background-color: white;
-  opacity: .8;
+  opacity: 0.8;
   border-radius: 10px;
   padding: 2%;
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main .benefits {
     width: 90vw;
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .main .benefits {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     width: 31vw;
     margin: 0 0 0 1%;
   }
 }
-
 .page-wrapper .main .requirements h3 {
   text-align: center;
   border: 1px solid #e2648f;
   background-color: white;
-  opacity: .8;
+  opacity: 0.8;
   border-radius: 10px;
   padding: 2%;
 }
-
 .page-wrapper .main .requirements p, .page-wrapper .main .requirements p ~ p {
   display: none;
 }
-
 .page-wrapper .main .requirements:hover > h3, .page-wrapper .main .requirements:focus > h3 {
   color: #e2648f;
 }
-
 .page-wrapper .main .requirements:hover p, .page-wrapper .main .requirements:hover p ~ p, .page-wrapper .main .requirements:focus p, .page-wrapper .main .requirements:focus p ~ p {
   display: block;
   background-color: white;
-  opacity: .8;
+  opacity: 0.8;
   border-radius: 10px;
   padding: 2%;
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main .requirements {
     width: 90vw;
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .main .requirements {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
     width: 31vw;
   }
 }
-
 .page-wrapper .main footer {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  order: 4;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: "Gaegu", cursive;
   font-size: 1.4rem;
   background: white;
-  opacity: .8;
+  opacity: 0.8;
   border: 1px solid #e2648f;
   border-radius: 20px 20px 0 0;
 }
-
 .page-wrapper .main footer a:link {
   color: #425b9c;
   text-decoration: none;
 }
-
 .page-wrapper .main footer a:visited {
   color: #425b9c;
 }
-
 .page-wrapper .main footer a:hover {
   color: #e2648f;
 }
-
 .page-wrapper .main footer a:active {
   color: #444444;
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main footer {
     width: 85vw;
@@ -425,7 +346,6 @@ body {
     padding-left: 1em;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .main footer {
     width: 95vw;
@@ -442,46 +362,38 @@ body {
     padding-right: 2em;
   }
 }
-
 .page-wrapper .sidebar {
   /*@media screen and (min-width: 48em) {
-			&:before {
-				background: olive;
-				height: 76.25vh;
-			}	
-		}*/
+  	&:before {
+  		background: olive;
+  		height: 76.25vh;
+  	}	
+  }*/
 }
-
 .page-wrapper .sidebar a:link {
   text-decoration: none;
   color: #444444;
 }
-
 .page-wrapper .sidebar a:hover {
   color: #e2648f;
 }
-
 .page-wrapper .sidebar a:active {
   color: #a3b3d8;
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     width: 90vw;
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .sidebar {
     font-family: "Montserrat", sans-serif;
-    padding: 5%;
+    padding: 0 5%;
   }
   .page-wrapper .sidebar:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 400px;
     right: 0vw;
@@ -491,14 +403,12 @@ body {
     border-radius: 10px 0 0 10px;
   }
 }
-
 @media screen and (min-width: 41em) {
   .page-wrapper .sidebar:before {
     background: orange;
     height: 730px;
   }
 }
-
 @media screen and (min-width: 43em) {
   .page-wrapper .sidebar:before {
     background: pink;
@@ -506,21 +416,18 @@ body {
     height: 707px;
   }
 }
-
 @media screen and (min-width: 46.25em) {
   .page-wrapper .sidebar:before {
     background: purple;
     height: 680px;
   }
 }
-
 @media screen and (min-width: 46.75em) {
   .page-wrapper .sidebar:before {
     background: fuchsia;
     height: 655px;
   }
 }
-
 @media screen and (min-width: 48.6em) {
   .page-wrapper .sidebar:before {
     background: aqua;
@@ -528,7 +435,6 @@ body {
     height: 632px;
   }
 }
-
 @media screen and (min-width: 55.65em) {
   .page-wrapper .sidebar:before {
     background: green;
@@ -536,49 +442,42 @@ body {
     height: 610px;
   }
 }
-
 @media screen and (min-width: 55.8em) {
   .page-wrapper .sidebar:before {
     background: red;
     height: 585px;
   }
 }
-
 @media screen and (min-width: 65.85em) {
   .page-wrapper .sidebar:before {
     background: teal;
     height: 570px;
   }
 }
-
 @media screen and (min-width: 71.8em) {
   .page-wrapper .sidebar:before {
     background: coral;
     height: 545px;
   }
 }
-
 @media screen and (min-width: 77em) {
   .page-wrapper .sidebar:before {
     background: lime;
     height: 525px;
   }
 }
-
 @media screen and (min-width: 81.5em) {
   .page-wrapper .sidebar:before {
     background: grey;
     height: 500px;
   }
 }
-
 @media screen and (min-width: 95em) {
   .page-wrapper .sidebar:before {
     background: grey;
     height: 510px;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .sidebar .wrapper {
     width: 45vw;
@@ -587,7 +486,6 @@ body {
     padding-left: 65vw;
   }
 }
-
 @media screen and (min-width: 46em) {
   .page-wrapper .sidebar .wrapper {
     width: 48vw;
@@ -595,7 +493,6 @@ body {
     padding-left: 63vw;
   }
 }
-
 @media screen and (min-width: 60.5em) {
   .page-wrapper .sidebar .wrapper {
     width: 45vw;
@@ -603,13 +500,12 @@ body {
     padding-left: 65vw;
   }
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar .wrapper .design-selection h3 {
     text-align: center;
     border: 1px solid #ffffff;
     background-color: white;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
     padding: 2%;
   }
@@ -622,12 +518,11 @@ body {
   .page-wrapper .sidebar .wrapper .design-selection:hover ul, .page-wrapper .sidebar .wrapper .design-selection:hover p, .page-wrapper .sidebar .wrapper .design-selection:hover p ~ p, .page-wrapper .sidebar .wrapper .design-selection:focus ul, .page-wrapper .sidebar .wrapper .design-selection:focus p, .page-wrapper .sidebar .wrapper .design-selection:focus p ~ p {
     display: block;
     background-color: white;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
     padding: 2%;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .sidebar .wrapper .design-selection {
     width: 27vw;
@@ -637,13 +532,12 @@ body {
     margin: 0 5%;
   }
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar .wrapper .design-archives h3 {
     text-align: center;
     border: 1px solid #ffffff;
     background-color: white;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
     padding: 2%;
   }
@@ -656,12 +550,11 @@ body {
   .page-wrapper .sidebar .wrapper .design-archives:hover ul, .page-wrapper .sidebar .wrapper .design-archives:hover p, .page-wrapper .sidebar .wrapper .design-archives:hover p ~ p, .page-wrapper .sidebar .wrapper .design-archives:focus ul, .page-wrapper .sidebar .wrapper .design-archives:focus p, .page-wrapper .sidebar .wrapper .design-archives:focus p ~ p {
     display: block;
     background-color: white;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
     padding: 2%;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .sidebar .wrapper .design-archives {
     width: 27vw;
@@ -671,13 +564,12 @@ body {
     margin: 0 5%;
   }
 }
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar .wrapper .zen-resources h3 {
     text-align: center;
     border: 1px solid #ffffff;
     background-color: white;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
     padding: 2%;
   }
@@ -690,12 +582,11 @@ body {
   .page-wrapper .sidebar .wrapper .zen-resources:hover ul, .page-wrapper .sidebar .wrapper .zen-resources:hover p, .page-wrapper .sidebar .wrapper .zen-resources:hover p ~ p, .page-wrapper .sidebar .wrapper .zen-resources:focus ul, .page-wrapper .sidebar .wrapper .zen-resources:focus p, .page-wrapper .sidebar .wrapper .zen-resources:focus p ~ p {
     display: block;
     background-color: white;
-    opacity: .8;
+    opacity: 0.8;
     border-radius: 10px;
     padding: 2%;
   }
 }
-
 @media screen and (min-width: 40em) {
   .page-wrapper .sidebar .wrapper .zen-resources {
     width: 27vw;
@@ -705,4 +596,5 @@ body {
     margin: 0 5%;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

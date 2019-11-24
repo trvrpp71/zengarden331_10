@@ -331,7 +331,7 @@ body {
 		}	
 		@media screen and (min-width: 40em) {
 			font-family: $primary-font;
-			padding: 5%;
+			padding: 0 5%;
 			&:before {
 				content: '';
 				position: absolute;
