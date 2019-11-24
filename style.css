@@ -65,6 +65,37 @@ body {
   background-size: auto;
 }
 
+.sidebar li {
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: 1px 3px;
+  padding-left: 15px;
+}
+.sidebar li:first-child {
+  background-image: url("assets/images/smercury.png");
+}
+.sidebar li:nth-child(2) {
+  background-image: url("assets/images/svenus.png");
+}
+.sidebar li:nth-child(3) {
+  background-image: url("assets/images/searth.png");
+}
+.sidebar li:nth-child(4) {
+  background-image: url("assets/images/smars.png");
+}
+.sidebar li:nth-child(5) {
+  background-image: url("assets/images/sjupiter.png");
+}
+.sidebar li:nth-child(6) {
+  background-image: url("assets/images/ssaturn.png");
+}
+.sidebar li:nth-child(7) {
+  background-image: url("assets/images/suranus.png");
+}
+.sidebar li:nth-child(8) {
+  background-image: url("assets/images/sneptune.png");
+}
+
 .page-wrapper {
   display: flex;
   flex-flow: column wrap;
@@ -390,7 +421,7 @@ body {
 @media screen and (min-width: 40em) {
   .page-wrapper .sidebar {
     font-family: "Montserrat", sans-serif;
-    padding: 0 5%;
+    padding: 0 3%;
   }
   .page-wrapper .sidebar:before {
     content: "";

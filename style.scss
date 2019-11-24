@@ -17,6 +17,38 @@ body {
 	background-size: auto;
 }
 
+.sidebar li{
+	list-style: none;
+	background-repeat: no-repeat;
+	background-position: 1px 3px;
+	padding-left: 15px;
+	
+	&:first-child {
+		background-image: url("assets/images/smercury.png")
+	}
+	&:nth-child(2) {
+		background-image: url("assets/images/svenus.png")
+	}
+	&:nth-child(3) {
+		background-image: url("assets/images/searth.png")
+	}
+	&:nth-child(4) {
+		background-image: url("assets/images/smars.png")
+	}
+	&:nth-child(5) {
+		background-image: url("assets/images/sjupiter.png")
+	}
+	&:nth-child(6) {
+		background-image: url("assets/images/ssaturn.png")
+	}
+	&:nth-child(7) {
+		background-image: url("assets/images/suranus.png")
+	}
+	&:nth-child(8) {
+		background-image: url("assets/images/sneptune.png")
+	}
+}
+
 .page-wrapper {
 	display: flex;
 	flex-flow: column wrap;
@@ -331,7 +363,7 @@ body {
 		}	
 		@media screen and (min-width: 40em) {
 			font-family: $primary-font;
-			padding: 0 5%;
+			padding: 0 3%;
 			&:before {
 				content: '';
 				position: absolute;
