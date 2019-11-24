@@ -433,6 +433,9 @@ body {
     background: #425b9c;
     border-radius: 10px 0 0 10px;
   }
+  .page-wrapper .sidebar .wrapper h3 {
+    padding-left: 1em;
+  }
 }
 @media screen and (min-width: 41em) {
   .page-wrapper .sidebar:before {

@@ -375,6 +375,10 @@ body {
 				border-radius: 10px 0 0 10px;
 				//box-shadow: 5px 10px 10px black;				
 			}
+			
+			.wrapper h3 {
+				padding-left: 1em;
+			}
 		}
 		@media screen and (min-width: 41em) {
 			&:before {
