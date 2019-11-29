@@ -146,23 +146,28 @@ body {
 					background-color: white;
 					opacity: .8;
 					border-radius: 10px;
-					padding: 2%;				
+					padding: 2%;
+					transition:1s;				
 				}
 				ul, p, p ~ p {					
-					display:none;
+					opacity:0;
+					transition-property:opacity;
+					transition-duration:1.5s;
 				}	
 				&:hover, &:focus {
 					& > h3 {
 						color:$color-3;
+						border:3px solid red;
+						opacity:1;
 					}
 					ul, p, p ~ p {
-						display:block;
 						background-color: white;
 						opacity: .8;
 						border-radius: 10px;
 						padding: 2%;
 					}
-				}			
+				}
+								
 			} //end .explanation small view			
 			@media screen and (min-width: 40em) {
 				
@@ -175,7 +180,8 @@ body {
 				padding: 1% 35vw 1% 3%;
 			} //end .explanation large view		
 		} //end .explanation		
-		.participation {			
+		.participation {
+
 			h3 { //accordian style text boxes below
 				text-align:center;
 				border:1px solid $color-3;
@@ -183,16 +189,20 @@ body {
 				opacity: .8;
 				border-radius: 10px;
 				padding: 2%;
+				transition:1s;
 			}
 			p, p ~ p {
-				display:none;
+				opacity:0;
+				transition-property:opacity;
+				transition-duration:1.5s;
 			}
 			&:hover, &:focus{
 				& > h3 {
 				color:$color-3;
+				border:3px solid red;
+				opacity:1;
 				}
 				p, p ~ p {
-					display:block;
 					background-color: white;
 					opacity: .8;
 					border-radius: 10px;
@@ -217,16 +227,21 @@ body {
 				opacity: .8;
 				border-radius: 10px;
 				padding: 2%;
+				transition:1s;
 			}
 			p, p ~ p {
-				display:none;
+				opacity:0;
+				transition-property:opacity;
+				transition-duration:1.5s;
 			}
 			&:hover, &:focus{
 				& > h3 {
 				color:$color-3;
+				border:3px solid red;
+				opacity:1;
 				}
 				p, p ~ p {
-					display:block;
+					opacity:1;
 					background-color: white;
 					opacity: .8;
 					border-radius: 10px;
@@ -251,18 +266,22 @@ body {
 				opacity: .8;
 				border-radius: 10px;
 				padding: 2%;
+				transition:1s;
 			}
 			p, p ~ p {
-				display:none;
+				opacity:0;
+				transition-property:opacity;
+				transition-duration:1.5s;
 			}
 			&:hover, &:focus{
 				& > h3 {
 				color:$color-3;
+				border:3px solid red;
+				opacity:1;
 				}
 				p, p ~ p {
-					display:block;
+					opacity:.8;
 					background-color: white;
-					opacity: .8;
 					border-radius: 10px;
 					padding: 2%;
 				}
@@ -481,16 +500,20 @@ body {
 						opacity: .8;
 						border-radius: 10px;
 						padding: 2%;
+						transition:1s;
 					}					
 					ul, p, p ~ p {
-						display:none;
+						opacity:0;
+						transition-property:opacity;
+						transition-duration:1.5s;
 					}
 					&:hover, &:focus{
 						& > h3 {
 						color:$color-3;
+						border:3px solid red;
+						opacity:1;
 						}
 						ul, p, p ~ p {
-							display:block;
 							background-color: white;
 							opacity: .8;
 							border-radius: 10px;
@@ -517,14 +540,17 @@ body {
 						padding: 2%;
 					}					
 					ul, p, p ~ p {
-						display:none;						
+						opacity:0;
+						transition-property:opacity;
+						transition-duration:1.5s;				
 					}
 					&:hover, &:focus{
 						& > h3 {
 						color:$color-3;
+						border:3px solid red;
+						opacity:1;
 						}
 						ul, p, p ~ p {
-							display:block;
 							background-color: white;
 							opacity: .8;
 							border-radius: 10px;
@@ -552,14 +578,17 @@ body {
 					}
 					
 					ul, p, p ~ p {
-						display:none;
+						opacity:0;
+						transition-property:opacity;
+						transition-duration:1.5s;	
 					}
 					&:hover, &:focus{
 						& > h3 {
 						color:$color-3;
+						border:3px solid red;
+						opacity:1;
 						}
 						ul, p, p ~ p {
-							display:block;
 							background-color: white;
 							opacity: .8;
 							border-radius: 10px;
