@@ -1,0 +1,45 @@
+header {
+    @media screen and (max-width: 39.9em) {
+        background-image: url('assets/images/small-header.png');
+        height: 400px;
+        background-size: cover;
+        h1 {
+            padding-top: 5%;
+        }	
+        h1, h2 {
+            color: $color-5;
+            text-shadow: 2px 2px 5px $color-3;
+            text-align: center;
+        }
+    } //end header small view	
+    @media screen and (min-width: 40em) {
+        position: relative;
+        height: 400px;
+        text-align: center;
+        overflow: hidden;
+        h1 {
+            margin: 50px 0 0 0;
+            //z-index: 100; *does nothing
+            &:before {
+                content: "";
+                //z-index: 1; *does nothing
+                height: 1700px;
+                width: 1700px;
+                background-image: url('assets/images/SolarSystemFaceless.png');
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -600px; 
+                left: -690px;
+                animation: rotate 30s infinite linear;
+            }
+            @keyframes rotate {
+                0% {
+                transform: rotate(0deg);
+                }    
+                100% {
+                transform: rotate(360deg);
+                }
+            }
+        } //end h1 large view
+    } //end header large view	
+} //end header

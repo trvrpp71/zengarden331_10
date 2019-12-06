@@ -67,29 +67,6 @@ body {
   background-size: auto;
 }
 
-.sidebar li {
-  list-style: none;
-  background-repeat: no-repeat;
-  background-position: 1px 3px;
-  padding-left: 15px;
-}
-
-.sidebar li:nth-child(3n+1) {
-  background-image: url("assets/images/smercury.png");
-}
-
-.sidebar li:nth-child(3n+2) {
-  background-image: url("assets/images/svenus.png");
-}
-
-.sidebar li:nth-child(3n+3) {
-  background-image: url("assets/images/searth.png");
-}
-
-.sidebar li:nth-child(3n+4) {
-  background-image: url("assets/images/smars.png");
-}
-
 .page-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,11 +475,34 @@ body {
 
 .page-wrapper .sidebar {
   /*@media screen and (min-width: 48em) {
-			&:before {
-				background: olive;
-				height: 76.25vh;
-			}	
-		}*/
+        &:before {
+            background: olive;
+            height: 76.25vh;
+        }	
+    }*/
+}
+
+.page-wrapper .sidebar li {
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: 1px 3px;
+  padding-left: 15px;
+}
+
+.page-wrapper .sidebar li:nth-child(3n+1) {
+  background-image: url("assets/images/smercury.png");
+}
+
+.page-wrapper .sidebar li:nth-child(3n+2) {
+  background-image: url("assets/images/svenus.png");
+}
+
+.page-wrapper .sidebar li:nth-child(3n+3) {
+  background-image: url("assets/images/searth.png");
+}
+
+.page-wrapper .sidebar li:nth-child(3n+4) {
+  background-image: url("assets/images/smars.png");
 }
 
 .page-wrapper .sidebar a:link {
@@ -531,17 +531,18 @@ body {
 @media screen and (min-width: 40em) {
   .page-wrapper .sidebar {
     font-family: "Montserrat", sans-serif;
-    padding: 0 3%;
+    padding: 0 2%;
+    font-size: .95rem;
   }
   .page-wrapper .sidebar:before {
     content: '';
     position: absolute;
     top: 400px;
-    right: 0vw;
-    width: 29.5vw;
+    right: 1vw;
+    width: 28vw;
     height: 755px;
     background: #425b9c;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
   }
   .page-wrapper .sidebar .wrapper h3 {
     padding-left: 1em;
