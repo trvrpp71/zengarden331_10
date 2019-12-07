@@ -8,8 +8,18 @@
             background-color: white;
             opacity: .8;
             border-radius: 10px;
-            padding: 2%;
-            transition:1s;				
+            padding: 50px 2% 2% 2%;
+            transition:1s;	
+            &:after {
+                content: "";
+                background-image: url('assets/images/mjupiter.png');
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 1800px;
+                left: 45vw;
+                width: 100%;
+                height: 100%;                    
+            }			
         }
         ul, p, p ~ p {					
             opacity:0;
@@ -31,14 +41,44 @@
         }
                         
     } //end .explanation small view			
-    @media screen and (min-width: 40em) {
-        
+    @media screen and (min-width: 40em) {        
         order: 1;
-        width: 60vw;
+        width: 99vw;
         background: #f2f2f2;
         opacity: .8;
         border-radius: 10px;
         margin: .15% 1% 5% 1%;
-        padding: 1% 35vw 1% 3%;
-    } //end .explanation large view		
+        padding: 2%;
+        
+    } //end .explanation medium view		
+    @media screen and (min-width: 1300px) {
+        width: 74vw;
+        margin: 1%;
+        padding: 1% 20vw 1% 3%;
+        &:after {
+            content: "";        
+            background-image: url('assets/images/venus.png');
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 1070px;
+            left: 80vw;
+        }
+    }
+    @media screen and (min-width: 1570px) {
+        &:after {
+            top: 1050px;
+        }
+    }
+    @media screen and (min-width: 1685px) {
+        &:after {
+            top: 1000px;
+        }
+    }
+    @media screen and (min-width: 2000px) {
+        &:after {
+            top: 1020px;
+        }
+    }
 } //end .explanation

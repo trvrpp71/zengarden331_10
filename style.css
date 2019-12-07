@@ -65,6 +65,7 @@ body {
           box-sizing: border-box;
   background: url("assets/images/starsbg.jpg");
   background-size: auto;
+  overflow-x: hidden;
 }
 
 .page-wrapper {
@@ -165,12 +166,79 @@ body {
 @media screen and (min-width: 40em) {
   .page-wrapper .intro .summary, .page-wrapper .intro .preamble {
     display: inline-block;
-    width: 60vw;
     margin: 0 1% 1% 1%;
     padding: 1% 3%;
     background: #f2f2f2;
     opacity: .8;
     border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .page-wrapper .intro .summary {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .page-wrapper .intro .summary {
+    width: 57vw;
+  }
+  .page-wrapper .intro .summary p {
+    padding-right: 8vw;
+  }
+  .page-wrapper .intro .summary:after {
+    content: "";
+    background-image: url("assets/images/earth86.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 440px;
+    left: 56vw;
+  }
+}
+
+@media screen and (max-width: 39.9em) {
+  .page-wrapper .intro .preamble {
+    padding-top: 50px;
+  }
+  .page-wrapper .intro .preamble:after {
+    content: "";
+    background-image: url("assets/images/mmercury.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 620px;
+    left: 45vw;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .page-wrapper .intro .preamble {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .page-wrapper .intro .preamble {
+    width: 44vw;
+    padding-left: 16vw;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .page-wrapper .intro .preamble:before {
+    content: "";
+    background-image: url("assets/images/uranus.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 730px;
+    left: 0px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 }
 
@@ -215,9 +283,19 @@ body {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
-    padding: 2%;
+    padding: 50px 2% 2% 2%;
     -webkit-transition: 1s;
     transition: 1s;
+  }
+  .page-wrapper .main .explanation h3:after {
+    content: "";
+    background-image: url("assets/images/mjupiter.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1800px;
+    left: 45vw;
+    width: 100%;
+    height: 100%;
   }
   .page-wrapper .main .explanation ul, .page-wrapper .main .explanation p, .page-wrapper .main .explanation p ~ p {
     opacity: 0;
@@ -244,12 +322,48 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 60vw;
+    width: 99vw;
     background: #f2f2f2;
     opacity: .8;
     border-radius: 10px;
     margin: .15% 1% 5% 1%;
-    padding: 1% 35vw 1% 3%;
+    padding: 2%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .page-wrapper .main .explanation {
+    width: 74vw;
+    margin: 1%;
+    padding: 1% 20vw 1% 3%;
+  }
+  .page-wrapper .main .explanation:after {
+    content: "";
+    background-image: url("assets/images/venus.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 1070px;
+    left: 80vw;
+  }
+}
+
+@media screen and (min-width: 1570px) {
+  .page-wrapper .main .explanation:after {
+    top: 1050px;
+  }
+}
+
+@media screen and (min-width: 1685px) {
+  .page-wrapper .main .explanation:after {
+    top: 1000px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .page-wrapper .main .explanation:after {
+    top: 1020px;
   }
 }
 
@@ -289,6 +403,19 @@ body {
   .page-wrapper .main .participation {
     width: 90vw;
     margin: 0 auto;
+  }
+  .page-wrapper .main .participation h3 {
+    padding: 50px 2% 2% 2%;
+  }
+  .page-wrapper .main .participation h3:after {
+    content: "";
+    background-image: url("assets/images/msaturn.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2400px;
+    left: 45vw;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -340,6 +467,19 @@ body {
     width: 90vw;
     margin: 0 auto;
   }
+  .page-wrapper .main .benefits h3 {
+    padding: 50px 2% 2% 2%;
+  }
+  .page-wrapper .main .benefits h3:after {
+    content: "";
+    background-image: url("assets/images/muranus.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3090px;
+    left: 40vw;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 40em) {
@@ -388,6 +528,19 @@ body {
   .page-wrapper .main .requirements {
     width: 90vw;
     margin: 0 auto;
+  }
+  .page-wrapper .main .requirements h3 {
+    padding: 50px 2% 2% 2%;
+  }
+  .page-wrapper .main .requirements h3:after {
+    content: "";
+    background-image: url("assets/images/mneptune.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3415px;
+    left: 40vw;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -668,9 +821,19 @@ body {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
-    padding: 2%;
+    padding: 50px 2% 2% 2%;
     -webkit-transition: 1s;
     transition: 1s;
+  }
+  .page-wrapper .sidebar .wrapper .design-selection h3:after {
+    content: "";
+    background-image: url("assets/images/mvenus.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 1140px;
+    left: 45vw;
   }
   .page-wrapper .sidebar .wrapper .design-selection ul, .page-wrapper .sidebar .wrapper .design-selection p, .page-wrapper .sidebar .wrapper .design-selection p ~ p {
     opacity: 0;
@@ -709,7 +872,17 @@ body {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
-    padding: 2%;
+    padding: 50px 2% 2% 2%;
+  }
+  .page-wrapper .sidebar .wrapper .design-archives h3:after {
+    content: "";
+    background-image: url("assets/images/mearth.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 1410px;
+    left: 45vw;
   }
   .page-wrapper .sidebar .wrapper .design-archives ul, .page-wrapper .sidebar .wrapper .design-archives p, .page-wrapper .sidebar .wrapper .design-archives p ~ p {
     opacity: 0;
@@ -748,7 +921,17 @@ body {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
-    padding: 2%;
+    padding: 50px 2% 2% 2%;
+  }
+  .page-wrapper .sidebar .wrapper .zen-resources h3:after {
+    content: "";
+    background-image: url("assets/images/mmars.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1560px;
+    left: 45vw;
+    width: 100%;
+    height: 100%;
   }
   .page-wrapper .sidebar .wrapper .zen-resources ul, .page-wrapper .sidebar .wrapper .zen-resources p, .page-wrapper .sidebar .wrapper .zen-resources p ~ p {
     opacity: 0;
