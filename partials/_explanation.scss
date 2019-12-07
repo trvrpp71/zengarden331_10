@@ -1,10 +1,18 @@
 .explanation {
+    
     @media screen and (max-width: 39.9em) {
         width: 90vw;
         margin: 0 auto;
+        h3 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+        
         h3 {  //accordian style text boxes below		
-            text-align:center;
-            border:1px solid $color-3;
             background-color: white;
             opacity: .8;
             border-radius: 10px;
@@ -15,10 +23,19 @@
                 background-image: url('assets/images/mjupiter.png');
                 background-repeat: no-repeat;
                 position: absolute;
-                top: 1800px;
+                top: 1870px;
                 left: 45vw;
                 width: 100%;
-                height: 100%;                    
+                height: 100%;   
+                @media screen and (min-width: 455px) {
+                    top: 1850px;
+                } 
+                @media screen and (min-width: 516px) {
+                    top: 1830px;
+                } 
+                @media screen and (min-width: 520px) {
+                    top: 1810px;
+                }                 
             }			
         }
         ul, p, p ~ p {					
@@ -41,7 +58,8 @@
         }
                         
     } //end .explanation small view			
-    @media screen and (min-width: 40em) {        
+    @media screen and (min-width: 40em) {   
+        
         order: 1;
         width: 99vw;
         background: #f2f2f2;

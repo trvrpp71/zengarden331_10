@@ -66,6 +66,7 @@ body {
   background: url("assets/images/starsbg.jpg");
   background-size: auto;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 
 .page-wrapper {
@@ -81,6 +82,25 @@ body {
 @media screen and (max-width: 39.9em) {
   .page-wrapper {
     text-align: center;
+  }
+  .page-wrapper h3 {
+    font-size: 2rem;
+    color: #425b9c;
+  }
+  .page-wrapper p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .page-wrapper h3 {
+    font-size: 2.2rem;
+    color: #425b9c;
+  }
+  .page-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
   }
 }
 
@@ -152,6 +172,15 @@ body {
   }
 }
 
+.page-wrapper .intro .summary h3, .page-wrapper .intro .preamble h3 {
+  font-size: 2rem;
+}
+
+.page-wrapper .intro .summary p, .page-wrapper .intro .preamble p {
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
 @media screen and (max-width: 39.9em) {
   .page-wrapper .intro .summary, .page-wrapper .intro .preamble {
     width: 90vw;
@@ -171,6 +200,13 @@ body {
     background: #f2f2f2;
     opacity: .8;
     border-radius: 10px;
+  }
+  .page-wrapper .intro .summary h3, .page-wrapper .intro .preamble h3 {
+    font-size: 2.2rem;
+  }
+  .page-wrapper .intro .summary p, .page-wrapper .intro .preamble p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
   }
 }
 
@@ -210,7 +246,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 620px;
+    top: 600px;
     left: 45vw;
   }
 }
@@ -278,8 +314,14 @@ body {
     margin: 0 auto;
   }
   .page-wrapper .main .explanation h3 {
-    text-align: center;
-    border: 1px solid #e2648f;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .page-wrapper .main .explanation p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .page-wrapper .main .explanation h3 {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
@@ -292,11 +334,32 @@ body {
     background-image: url("assets/images/mjupiter.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 1800px;
+    top: 1870px;
     left: 45vw;
     width: 100%;
     height: 100%;
   }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 455px) {
+  .page-wrapper .main .explanation h3:after {
+    top: 1850px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 516px) {
+  .page-wrapper .main .explanation h3:after {
+    top: 1830px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 520px) {
+  .page-wrapper .main .explanation h3:after {
+    top: 1810px;
+  }
+}
+
+@media screen and (max-width: 39.9em) {
   .page-wrapper .main .explanation ul, .page-wrapper .main .explanation p, .page-wrapper .main .explanation p ~ p {
     opacity: 0;
     -webkit-transition-property: opacity;
@@ -368,8 +431,6 @@ body {
 }
 
 .page-wrapper .main .participation h3 {
-  text-align: center;
-  border: 1px solid #e2648f;
   background-color: white;
   opacity: .8;
   border-radius: 10px;
@@ -412,10 +473,52 @@ body {
     background-image: url("assets/images/msaturn.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 2400px;
+    top: 2450px;
     left: 45vw;
     width: 100%;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 437px) {
+  .page-wrapper .main .participation h3:after {
+    top: 2430px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 442px) {
+  .page-wrapper .main .participation h3:after {
+    top: 2390px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 455px) {
+  .page-wrapper .main .participation h3:after {
+    top: 2370px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 507px) {
+  .page-wrapper .main .participation h3:after {
+    top: 2350px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 516px) {
+  .page-wrapper .main .participation h3:after {
+    top: 2310px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 521px) {
+  .page-wrapper .main .participation h3:after {
+    top: 2280px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 608px) {
+  .page-wrapper .main .participation h3:after {
+    top: 2230px;
   }
 }
 
@@ -430,8 +533,6 @@ body {
 }
 
 .page-wrapper .main .benefits h3 {
-  text-align: center;
-  border: 1px solid #e2648f;
   background-color: white;
   opacity: .8;
   border-radius: 10px;
@@ -475,10 +576,100 @@ body {
     background-image: url("assets/images/muranus.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 3090px;
+    top: 3170px;
     left: 40vw;
-    width: 100%;
-    height: 100%;
+    width: 20%;
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 420px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 3130px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 432px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 3090px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 438px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 3070px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 442px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 3020px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 454px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 3000px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 472px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2980px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 480px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2960px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 508px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2940px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 512px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2910px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 518px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2890px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 520px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2860px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 553px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2830px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 600px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2790px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 624px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2760px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 633px) {
+  .page-wrapper .main .benefits h3:after {
+    top: 2730px;
   }
 }
 
@@ -493,8 +684,6 @@ body {
 }
 
 .page-wrapper .main .requirements h3 {
-  text-align: center;
-  border: 1px solid #e2648f;
   background-color: white;
   opacity: .8;
   border-radius: 10px;
@@ -537,10 +726,70 @@ body {
     background-image: url("assets/images/mneptune.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 3415px;
+    top: 3445px;
     left: 40vw;
     width: 100%;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 432px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3420px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 438px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3400px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 442px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3340px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 472px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3300px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 498px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3260px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 512px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3220px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 520px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3160px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 576px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3130px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 600px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3100px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 608px) {
+  .page-wrapper .main .requirements h3:after {
+    top: 3060px;
   }
 }
 
@@ -687,6 +936,11 @@ body {
     padding: 0 2%;
     font-size: .95rem;
   }
+  .page-wrapper .sidebar h3 {
+    font-size: 1.2rem;
+    position: relative;
+    left: 20px;
+  }
   .page-wrapper .sidebar:before {
     content: '';
     position: absolute;
@@ -696,9 +950,6 @@ body {
     height: 755px;
     background: #425b9c;
     border-radius: 10px;
-  }
-  .page-wrapper .sidebar .wrapper h3 {
-    padding-left: 1em;
   }
 }
 
@@ -816,8 +1067,6 @@ body {
 
 @media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar .wrapper .design-selection h3 {
-    text-align: center;
-    border: 1px solid #ffffff;
     background-color: white;
     opacity: .8;
     border-radius: 10px;
@@ -832,9 +1081,30 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 1140px;
+    top: 1100px;
     left: 45vw;
   }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 450px) {
+  .page-wrapper .sidebar .wrapper .design-selection h3:after {
+    top: 1080px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 518px) {
+  .page-wrapper .sidebar .wrapper .design-selection h3:after {
+    top: 1050px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 610px) {
+  .page-wrapper .sidebar .wrapper .design-selection h3:after {
+    top: 1030px;
+  }
+}
+
+@media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar .wrapper .design-selection ul, .page-wrapper .sidebar .wrapper .design-selection p, .page-wrapper .sidebar .wrapper .design-selection p ~ p {
     opacity: 0;
     -webkit-transition-property: opacity;
@@ -867,8 +1137,6 @@ body {
 
 @media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar .wrapper .design-archives h3 {
-    text-align: center;
-    border: 1px solid #ffffff;
     background-color: white;
     opacity: .8;
     border-radius: 10px;
@@ -881,9 +1149,30 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 1410px;
+    top: 1420px;
     left: 45vw;
   }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 455px) {
+  .page-wrapper .sidebar .wrapper .design-archives h3:after {
+    top: 1400px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 515px) {
+  .page-wrapper .sidebar .wrapper .design-archives h3:after {
+    top: 1360px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 610px) {
+  .page-wrapper .sidebar .wrapper .design-archives h3:after {
+    top: 1350px;
+  }
+}
+
+@media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar .wrapper .design-archives ul, .page-wrapper .sidebar .wrapper .design-archives p, .page-wrapper .sidebar .wrapper .design-archives p ~ p {
     opacity: 0;
     -webkit-transition-property: opacity;
@@ -916,8 +1205,6 @@ body {
 
 @media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar .wrapper .zen-resources h3 {
-    text-align: center;
-    border: 1px solid #ffffff;
     background-color: white;
     opacity: .8;
     border-radius: 10px;
@@ -928,11 +1215,32 @@ body {
     background-image: url("assets/images/mmars.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 1560px;
+    top: 1630px;
     left: 45vw;
     width: 100%;
     height: 100%;
   }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 455px) {
+  .page-wrapper .sidebar .wrapper .zen-resources h3:after {
+    top: 1610px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 517px) {
+  .page-wrapper .sidebar .wrapper .zen-resources h3:after {
+    top: 1580px;
+  }
+}
+
+@media screen and (max-width: 39.9em) and (min-width: 610px) {
+  .page-wrapper .sidebar .wrapper .zen-resources h3:after {
+    top: 1560px;
+  }
+}
+
+@media screen and (max-width: 39.9em) {
   .page-wrapper .sidebar .wrapper .zen-resources ul, .page-wrapper .sidebar .wrapper .zen-resources p, .page-wrapper .sidebar .wrapper .zen-resources p ~ p {
     opacity: 0;
     -webkit-transition-property: opacity;

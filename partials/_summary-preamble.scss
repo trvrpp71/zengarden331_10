@@ -1,4 +1,11 @@
 .summary, .preamble {
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
     @media screen and (max-width: 39.9em) {
         width: 90vw;
         margin: 2% auto;
@@ -14,6 +21,13 @@
         background: #f2f2f2;
         opacity: .8;
         border-radius: 10px;
+        h3 {
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
     }
 } //end .summary, .preamble	
 
@@ -42,6 +56,7 @@
 .preamble {
     @media screen and (max-width: 39.9em) {
         padding-top: 50px;
+        
         &:after {
             content: "";        
             background-image: url('assets/images/mmercury.png');
@@ -49,7 +64,7 @@
             height: 100%;
             width: 100%;
             position: absolute;
-            top: 620px;
+            top: 600px;
             left: 45vw;
         }
     }    
