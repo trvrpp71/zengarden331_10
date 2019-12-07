@@ -1,4 +1,19 @@
 header {
+	/* * * * * * Changing Color * * * * * * */
+	h1, h2{
+		animation: headercolor 7s alternate infinite;
+	}
+	@keyframes headercolor {
+		0% {color: $color-5;}
+		20% {color: $color-4;}
+		40% {color: $color-3;}
+		60% {color: $color-2;}
+		80% {color: $color-1;}
+		100% {color: $color-5;}
+		}
+	
+	
+	/* * * * * * Header Settings * * * * * * */
     @media screen and (max-width: 39.9em) {
         background-image: url('assets/images/small-header.png');
         height: 400px;
