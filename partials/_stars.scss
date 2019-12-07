@@ -1,0 +1,101 @@
+#zen-intro:before, #zen-summary:before, #zen-preamble:before, #zen-supporting:before, #zen-intro:after, #zen-summary:after, #zen-preamble:after, #zen-supporting:after{
+	content: "";
+	width: .3em;
+	height: .3em;
+	background-color: white;
+	z-index: 4;
+	position: absolute;
+	transform: scale(0);
+}
+
+#zen-intro:before {
+	top: 25%;
+	right: 5%;
+	animation: shootingstarLD 5s 3s infinite linear;
+}
+
+#zen-summary:before{
+	top: 75%;
+	left: 10%;
+	animation: shootingstarRU 6s infinite linear;
+}
+
+#zen-preamble:before, #benefits:before {
+	top: 150%;
+	left: 25%;
+	animation: shootingstarRD 8s 2s infinite linear;
+}
+
+#zen-supporting:before {
+	top: 200%;
+	right: 20%;
+	animation: shootingstarRU 5s infinite linear;
+}
+
+#zen-intro:after {
+	top: 250%;
+	right: 50%;
+	animation: shootingstarLD 5s 3s infinite linear;
+}
+
+#zen-summary:after{
+	top: 250%;
+	left: 10%;
+	animation: shootingstarRU 6s infinite linear;
+}
+
+#zen-preamble:after {
+	top: 320%;
+	left: 25%;
+	animation: shootingstarRD 8s 2s infinite linear;
+}
+
+#zen-supporting:after {
+	top: 400%;
+	right: 20%;
+	animation: shootingstarLD 5s infinite linear;
+}
+
+
+
+@keyframes shootingstarLD {
+	0% {transform: scale(0);
+		background: none;}
+	90% {transform: scale(0);
+		background: none;
+		transform: translate(0, 0px);}
+	95% {transform:scale(1);
+		background: white;
+		transform: translate(-200px, 10px); }
+	100% {transform: scale(1);
+		background: none;
+		transform: translate(-400px, 20px);}
+	}
+
+@keyframes shootingstarRU {
+	0% {transform: scale(0);
+		background: none;}
+	90% {transform: scale(0);
+		background: none;
+		transform: translate(0, 0px);}
+	95% {transform:scale(1.25);
+		background: white;
+		transform: translate(200px, -100px); }
+	100% {transform: scale(1);
+		background: none;
+		transform: translate(400px, -200px);}
+	}
+
+@keyframes shootingstarRD {
+	0% {transform: scale(0);
+		background: none;}
+	90% {transform: scale(0);
+		background: none;
+		transform: translate(0, 0px);}
+	95% {transform:scale(1.5);
+		background: white;
+		transform: translate(200px, 150px); }
+	100% {transform: scale(1);
+		background: none;
+		transform: translate(400px, 300px);}
+	}

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Gaegu|Montserrat&display=swap');
 @import 'partials/colors';
 @import 'partials/typography';
+@import 'partials/stars';
 
 $border-radius:4px;
 $spacing:20px;
@@ -73,7 +74,5 @@ body {
 	@import 'partials/sidebar';	
 } //end .page-wrapper
 	
-
-
 
 
