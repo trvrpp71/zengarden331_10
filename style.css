@@ -312,7 +312,7 @@ header h1, header h2 {
     @media screen and (min-width: 40em) {
       .page-wrapper .main {
         flex-wrap: wrap;
-        background: url("assets/images/black-hole.svg");
+        background: url("assets/images/blackhole.svg");
         background-repeat: no-repeat;
         background-position: 50% 75vh; } }
     @media screen and (max-width: 39.9em) {
