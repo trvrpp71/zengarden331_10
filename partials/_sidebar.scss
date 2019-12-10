@@ -165,6 +165,8 @@
         }
         .design-selection {            
             @media screen and (max-width: 39.9em) {
+                max-height:100px;
+                transition:max-height 1s ease;
                 h3 {
                     background-color: white;
                     opacity: .8;
@@ -195,6 +197,7 @@
                     opacity:0;
                     transition-property:opacity;
                     transition-duration:1.5s;
+                    transform:scale(0);
                 }
                 &:hover, &:focus{
                     & > h3 {
@@ -220,6 +223,8 @@
         } //end .design-selection
         .design-archives {				
             @media screen and (max-width:39.9em){
+                max-height:100px;
+                transition:max-height 1s ease;
                 h3 {
                     background-color: white;
                     opacity: .8;
@@ -248,7 +253,8 @@
                 ul, p, p ~ p {
                     opacity:0;
                     transition-property:opacity;
-                    transition-duration:1.5s;				
+                    transition-duration:1.5s;
+                    transform:scale(0);				
                 }
                 &:hover, &:focus{
                     & > h3 {
@@ -274,6 +280,8 @@
         } //end .design-archives
         .zen-resources {
             @media screen and (max-width:39.9em){
+                max-height:100px;
+                transition:max-height 1s ease;
                 h3 {
                     background-color: white;
                     opacity: .8;
@@ -303,7 +311,8 @@
                 ul, p, p ~ p {
                     opacity:0;
                     transition-property:opacity;
-                    transition-duration:1.5s;	
+                    transition-duration:1.5s;
+                    transform:scale(0);	
                 }
                 &:hover, &:focus{
                     & > h3 {

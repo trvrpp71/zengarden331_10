@@ -3,6 +3,8 @@
     @media screen and (max-width: 39.9em) {
         width: 90vw;
         margin: 0 auto;
+        max-height:100px;
+        transition:max-height 1s ease;
         h3 {
             font-size: 2rem;
             margin: 0;
@@ -40,6 +42,7 @@
         }
         ul, p, p ~ p {					
             opacity:0;
+            transform:scale(0);
             transition-property:opacity;
             transition-duration:1.5s;
         }	
@@ -52,6 +55,7 @@
             ul, p, p ~ p {
                 background-color: white;
                 opacity: .8;
+                transform:scale(1);
                 border-radius: 10px;
                 padding: 2%;
             }
