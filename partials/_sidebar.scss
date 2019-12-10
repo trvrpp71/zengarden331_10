@@ -168,6 +168,7 @@
                 max-height:100px;
                 transition:max-height 1s ease;
                 h3 {
+                    max-height:100px;
                     background-color: white;
                     opacity: .8;
                     border-radius: 10px;
@@ -193,23 +194,25 @@
                         }
                     }
                 }					
-                ul, p, p ~ p {
+                &>nav {
                     opacity:0;
                     transition-property:opacity;
                     transition-duration:1.5s;
                     transform:scale(0);
                 }
                 &:hover, &:focus{
+                    max-height:500px;
                     & > h3 {
                     color:$color-3;
                     border:3px solid red;
                     opacity:1;
                     }
-                    ul, p, p ~ p {
+                    & > nav {
                         background-color: white;
                         opacity: .8;
                         border-radius: 10px;
                         padding: 2%;
+                        transform:scale(1);
                     }
                 }
             } //end .design-selection small view
@@ -250,23 +253,25 @@
                         }
                     }
                 }					
-                ul, p, p ~ p {
+               &>nav {
                     opacity:0;
                     transition-property:opacity;
                     transition-duration:1.5s;
                     transform:scale(0);				
                 }
                 &:hover, &:focus{
+                    max-height:500px;
                     & > h3 {
                     color:$color-3;
                     border:3px solid red;
                     opacity:1;
                     }
-                    ul, p, p ~ p {
+                    &>nav {
                         background-color: white;
                         opacity: .8;
                         border-radius: 10px;
                         padding: 2%;
+                        transform:scale(1);
                     }
                 }
             }	//end .design-archives small view
@@ -308,23 +313,25 @@
                     }
                 }
                 
-                ul, p, p ~ p {
+                &>ul {
                     opacity:0;
                     transition-property:opacity;
                     transition-duration:1.5s;
                     transform:scale(0);	
                 }
                 &:hover, &:focus{
+                    max-height:500px;
                     & > h3 {
                     color:$color-3;
                     border:3px solid red;
                     opacity:1;
                     }
-                    ul, p, p ~ p {
+                    &>ul, p, p ~ p {
                         background-color: white;
                         opacity: .8;
                         border-radius: 10px;
                         padding: 2%;
+                        transform:scale(1);
                     }
                 }
             } //end .zen-resources small view

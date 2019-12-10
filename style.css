@@ -599,7 +599,7 @@ header h1, header h2 {
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main .explanation {
     width: 90vw;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
     max-height: 100px;
     -webkit-transition: max-height 1s ease;
     transition: max-height 1s ease;
@@ -657,8 +657,11 @@ header h1, header h2 {
             transform: scale(0);
     -webkit-transition-property: opacity;
     transition-property: opacity;
-    -webkit-transition-duration: 1.5s;
-            transition-duration: 1.5s;
+    -webkit-transition-duration: all 1.5s;
+            transition-duration: all 1.5s;
+  }
+  .page-wrapper .main .explanation:hover, .page-wrapper .main .explanation:focus {
+    max-height: 900px;
   }
   .page-wrapper .main .explanation:hover > h3, .page-wrapper .main .explanation:focus > h3 {
     color: #e2648f;
@@ -779,7 +782,7 @@ header h1, header h2 {
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main .participation {
     width: 90vw;
-    margin: 0 auto;
+    margin: 5px auto 0 auto;
   }
   .page-wrapper .main .participation h3 {
     padding: 50px 2% 2% 2%;
@@ -896,7 +899,7 @@ header h1, header h2 {
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main .benefits {
     width: 90vw;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
   }
   .page-wrapper .main .benefits h3 {
     padding: 50px 2% 2% 2%;
@@ -1060,7 +1063,7 @@ header h1, header h2 {
 @media screen and (max-width: 39.9em) {
   .page-wrapper .main .requirements {
     width: 90vw;
-    margin: 0 auto;
+    margin: 40px auto 100px auto;
     max-height: 100px;
     transitioni: max-height 1s ease;
   }
@@ -1418,6 +1421,7 @@ header h1, header h2 {
     transition: max-height 1s ease;
   }
   .page-wrapper .sidebar .wrapper .design-selection h3 {
+    max-height: 100px;
     background-color: white;
     opacity: .8;
     border-radius: 10px;
@@ -1456,7 +1460,7 @@ header h1, header h2 {
 }
 
 @media screen and (max-width: 39.9em) {
-  .page-wrapper .sidebar .wrapper .design-selection ul, .page-wrapper .sidebar .wrapper .design-selection p, .page-wrapper .sidebar .wrapper .design-selection p ~ p {
+  .page-wrapper .sidebar .wrapper .design-selection > nav {
     opacity: 0;
     -webkit-transition-property: opacity;
     transition-property: opacity;
@@ -1465,16 +1469,21 @@ header h1, header h2 {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
+  .page-wrapper .sidebar .wrapper .design-selection:hover, .page-wrapper .sidebar .wrapper .design-selection:focus {
+    max-height: 500px;
+  }
   .page-wrapper .sidebar .wrapper .design-selection:hover > h3, .page-wrapper .sidebar .wrapper .design-selection:focus > h3 {
     color: #e2648f;
     border: 3px solid red;
     opacity: 1;
   }
-  .page-wrapper .sidebar .wrapper .design-selection:hover ul, .page-wrapper .sidebar .wrapper .design-selection:hover p, .page-wrapper .sidebar .wrapper .design-selection:hover p ~ p, .page-wrapper .sidebar .wrapper .design-selection:focus ul, .page-wrapper .sidebar .wrapper .design-selection:focus p, .page-wrapper .sidebar .wrapper .design-selection:focus p ~ p {
+  .page-wrapper .sidebar .wrapper .design-selection:hover > nav, .page-wrapper .sidebar .wrapper .design-selection:focus > nav {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
     padding: 2%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -1531,7 +1540,7 @@ header h1, header h2 {
 }
 
 @media screen and (max-width: 39.9em) {
-  .page-wrapper .sidebar .wrapper .design-archives ul, .page-wrapper .sidebar .wrapper .design-archives p, .page-wrapper .sidebar .wrapper .design-archives p ~ p {
+  .page-wrapper .sidebar .wrapper .design-archives > nav {
     opacity: 0;
     -webkit-transition-property: opacity;
     transition-property: opacity;
@@ -1540,16 +1549,21 @@ header h1, header h2 {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
+  .page-wrapper .sidebar .wrapper .design-archives:hover, .page-wrapper .sidebar .wrapper .design-archives:focus {
+    max-height: 500px;
+  }
   .page-wrapper .sidebar .wrapper .design-archives:hover > h3, .page-wrapper .sidebar .wrapper .design-archives:focus > h3 {
     color: #e2648f;
     border: 3px solid red;
     opacity: 1;
   }
-  .page-wrapper .sidebar .wrapper .design-archives:hover ul, .page-wrapper .sidebar .wrapper .design-archives:hover p, .page-wrapper .sidebar .wrapper .design-archives:hover p ~ p, .page-wrapper .sidebar .wrapper .design-archives:focus ul, .page-wrapper .sidebar .wrapper .design-archives:focus p, .page-wrapper .sidebar .wrapper .design-archives:focus p ~ p {
+  .page-wrapper .sidebar .wrapper .design-archives:hover > nav, .page-wrapper .sidebar .wrapper .design-archives:focus > nav {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
     padding: 2%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -1606,7 +1620,7 @@ header h1, header h2 {
 }
 
 @media screen and (max-width: 39.9em) {
-  .page-wrapper .sidebar .wrapper .zen-resources ul, .page-wrapper .sidebar .wrapper .zen-resources p, .page-wrapper .sidebar .wrapper .zen-resources p ~ p {
+  .page-wrapper .sidebar .wrapper .zen-resources > ul {
     opacity: 0;
     -webkit-transition-property: opacity;
     transition-property: opacity;
@@ -1615,16 +1629,21 @@ header h1, header h2 {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
+  .page-wrapper .sidebar .wrapper .zen-resources:hover, .page-wrapper .sidebar .wrapper .zen-resources:focus {
+    max-height: 500px;
+  }
   .page-wrapper .sidebar .wrapper .zen-resources:hover > h3, .page-wrapper .sidebar .wrapper .zen-resources:focus > h3 {
     color: #e2648f;
     border: 3px solid red;
     opacity: 1;
   }
-  .page-wrapper .sidebar .wrapper .zen-resources:hover ul, .page-wrapper .sidebar .wrapper .zen-resources:hover p, .page-wrapper .sidebar .wrapper .zen-resources:hover p ~ p, .page-wrapper .sidebar .wrapper .zen-resources:focus ul, .page-wrapper .sidebar .wrapper .zen-resources:focus p, .page-wrapper .sidebar .wrapper .zen-resources:focus p ~ p {
+  .page-wrapper .sidebar .wrapper .zen-resources:hover > ul, .page-wrapper .sidebar .wrapper .zen-resources:hover p, .page-wrapper .sidebar .wrapper .zen-resources:hover p ~ p, .page-wrapper .sidebar .wrapper .zen-resources:focus > ul, .page-wrapper .sidebar .wrapper .zen-resources:focus p, .page-wrapper .sidebar .wrapper .zen-resources:focus p ~ p {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
     padding: 2%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
