@@ -475,7 +475,7 @@ body {
 
 @media screen and (max-width: 39.9em) {
   .page-wrapper .intro .summary, .page-wrapper .intro .preamble {
-    width: 90vw;
+    width: 88vw;
     margin: 2% auto;
     padding: 1%;
     background: #f2f2f2;
@@ -529,7 +529,8 @@ body {
 
 @media screen and (max-width: 39.9em) {
   .page-wrapper .intro .preamble {
-    padding: 2%;
+    padding: 1%;
+    margin: 5% auto 0% auto;
   }
   .page-wrapper .intro .preamble h3:before {
     content: url("assets/images/mmercury.png");
@@ -907,8 +908,8 @@ body {
   font-size: 1.4rem;
   background: white;
   opacity: .8;
-  border: 1px solid #e2648f;
-  border-radius: 20px 20px 0 0;
+  border: 3px solid #425b9c;
+  border-radius: 10px;
 }
 
 .page-wrapper .main footer a:link {
@@ -1041,6 +1042,9 @@ body {
     height: 755px;
     background: #425b9c;
     border-radius: 10px;
+  }
+  .page-wrapper .sidebar .wrapper h3 {
+    padding-left: 1em;
   }
 }
 

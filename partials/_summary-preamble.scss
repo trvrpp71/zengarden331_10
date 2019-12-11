@@ -8,7 +8,7 @@
         padding: 0 10px;
     }
     @media screen and (max-width: 39.9em) {
-        width: 90vw;
+        width: 88vw;
         margin: 2% auto;
         padding: 1%;
         background: #f2f2f2;
@@ -56,8 +56,8 @@
 }
 .preamble {
     @media screen and (max-width: 39.9em) {
-        padding: 2%;
-        
+        padding: 1%;
+        margin: 5% auto 0% auto;
         h3:before {
             content: url('assets/images/mmercury.png');        
             width: 100%;
