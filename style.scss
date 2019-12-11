@@ -17,20 +17,6 @@ body {
 	font-family: $primary-font;
 }
 
-header h1, header h2{
-		animation: headercolor 7s alternate infinite;
-	}
-	@keyframes headercolor {
-		0% {color: $color-5;}
-		20% {color: $color-4;}
-		40% {color: $color-3;}
-		60% {color: $color-2;}
-		80% {color: $color-1;}
-		100% {color: $color-5;}
-		}
-	
-	
-
 .page-wrapper {
 	display: flex;
 	flex-flow: column wrap;

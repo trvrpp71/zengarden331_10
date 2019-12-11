@@ -2,16 +2,12 @@
     max-height:100px;
     transition:max-height 1s ease;
     h3 { //accordian style text boxes below
+        text-align: center;
         background-color: white;
         opacity: .8;
         border-radius: 10px;
-        padding: 2%;
-        transition:1s;
-        &:after{
-            border-top:0 solid red;
-             border-bottom:10px solid green;
-            transition:border-top .1s, border-bottom .1s .1s;
-        }
+        padding: 2%; 
+        transition:1s;      
     }
     p, p ~ p {
         opacity:0;
@@ -22,8 +18,8 @@
     &:hover, &:focus{
         max-height:900px;
         & > h3 {
-        color:$color-3;
-        border:3px solid red;
+        color: $color-3;
+        border:3px solid $color-3;
         opacity:1;
         }
         p, p ~ p {
@@ -38,37 +34,11 @@
         width: 90vw;
         margin: 5px auto 0 auto;
         h3 {
-            padding: 50px 2% 2% 2%;
-            &:after {
-                content: "";
-                background-image: url('assets/images/msaturn.png');
-                background-repeat: no-repeat;
-                position: absolute;
-                top: 2450px;
-                left: 45vw;
+            padding: 2%;
+            &:before {
+                content: url('assets/images/msaturn.png');                
                 width: 100%;
-                height: 100%;
-                @media screen and (min-width: 437px) {
-                    top: 2430px;
-                } 
-                @media screen and (min-width: 442px) {
-                    top: 2390px;
-                }  
-                @media screen and (min-width: 455px) {
-                    top: 2370px;
-                }    
-                @media screen and (min-width: 507px) {
-                    top: 2350px;
-                } 
-                @media screen and (min-width: 516px) {
-                    top: 2310px;
-                }  
-                @media screen and (min-width: 521px) {
-                    top: 2280px;
-                }  
-                @media screen and (min-width: 608px) {
-                    top: 2230px;
-                }                  
+                display: block;                
             }
         }
     }

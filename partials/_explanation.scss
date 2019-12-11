@@ -1,43 +1,27 @@
 .explanation {
-    
+    position: relative;
     @media screen and (max-width: 39.9em) {
         width: 90vw;
         margin: 40px auto 0 auto;
         max-height:100px;
         transition:max-height 1s ease;
-        h3 {
-            font-size: 2rem;
-            margin: 0;
-        }
+       
         p {
             font-size: 1rem;
             padding: 0 10px;
         }
         
         h3 {  //accordian style text boxes below		
+            margin: 0;
             background-color: white;
             opacity: .8;
             border-radius: 10px;
-            padding: 50px 2% 2% 2%;
-            transition:1s;	
-            &:after {
-                content: "";
-                background-image: url('assets/images/mjupiter.png');
-                background-repeat: no-repeat;
-                position: absolute;
-                top: 1870px;
-                left: 45vw;
+            padding: 2%;
+            transition:1s;
+            &:before {
+                content: url('assets/images/mjupiter.png');                
                 width: 100%;
-                height: 100%;   
-                @media screen and (min-width: 455px) {
-                    top: 1850px;
-                } 
-                @media screen and (min-width: 516px) {
-                    top: 1830px;
-                } 
-                @media screen and (min-width: 520px) {
-                    top: 1810px;
-                }                 
+                display: block;               
             }			
         }
         ul, p, p ~ p {					
@@ -49,8 +33,8 @@
         &:hover, &:focus {
             max-height:900px;
             & > h3 {
-                color:$color-3;
-                border:3px solid red;
+                color: $color-3;
+                border:3px solid $color-3;
                 opacity:1;
             }
             ul, p, p ~ p {
@@ -63,45 +47,27 @@
         }
                         
     } //end .explanation small view			
-    @media screen and (min-width: 40em) {   
-        
+    @media screen and (min-width: 40em) {          
         order: 1;
-        width: 99vw;
         background: #f2f2f2;
         opacity: .8;
         border-radius: 10px;
-        margin: .15% 1% 5% 1%;
-        padding: 2%;
-        
+        margin: .15% 32% .15% 1%;
+        padding: 2%;        
     } //end .explanation medium view		
     @media screen and (min-width: 1300px) {
         width: 74vw;
-        margin: 1%;
+        margin: .15% 35.5% .15% 1%;
         padding: 1% 20vw 1% 3%;
-        &:after {
-            content: "";        
+        h3:after {
+            content: '';         
             background-image: url('assets/images/venus.png');
             background-repeat: no-repeat;
-            height: 100%;
             width: 100%;
+            height: 100%;
             position: absolute;
-            top: 1070px;
-            left: 80vw;
-        }
-    }
-    @media screen and (min-width: 1570px) {
-        &:after {
-            top: 1050px;
-        }
-    }
-    @media screen and (min-width: 1685px) {
-        &:after {
-            top: 1000px;
-        }
-    }
-    @media screen and (min-width: 2000px) {
-        &:after {
-            top: 1020px;
+            left: 70%;   
+            top: 25%;        
         }
     }
 } //end .explanation

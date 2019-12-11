@@ -2,6 +2,7 @@
     max-height:100px;
     transition:max-height 1s ease;
     h3 { //accordian style text boxes below
+        text-align: center;
         background-color: white;
         opacity: .8;
         border-radius: 10px;
@@ -18,8 +19,8 @@
     &:hover, &:focus{
         max-height:900px;
         & > h3 {
-        color:$color-3;
-        border:3px solid red;
+        color: $color-3;
+        border:3px solid $color-3;
         opacity:1;
         }
         p, p ~ p {
@@ -35,63 +36,12 @@
         width: 90vw;
         margin: 40px auto 0 auto;
         h3 {
-            padding: 50px 2% 2% 2%;
-            &:after {
-                content: "";
-                background-image: url('assets/images/muranus.png');
-                background-repeat: no-repeat;
-                position: absolute;
-                top: 3170px;
-                left: 40vw;
-                width: 20%;
-                height: 20%;   
-                @media screen and (min-width: 420px) {
-                    top: 3130px;
-                }  
-                @media screen and (min-width: 432px) {
-                    top: 3090px;
-                }  
-                @media screen and (min-width: 438px) {
-                    top: 3070px;
-                }   
-                @media screen and (min-width: 442px) {
-                    top: 3020px;
-                }  
-                @media screen and (min-width: 454px) {
-                    top: 3000px;
-                }  
-                @media screen and (min-width: 472px) {
-                    top: 2980px;
-                }   
-                @media screen and (min-width: 480px) {
-                    top: 2960px;
-                }   
-                @media screen and (min-width: 508px) {
-                    top: 2940px;
-                }  
-                @media screen and (min-width: 512px) {
-                    top: 2910px;
-                } 
-                @media screen and (min-width: 518px) {
-                    top: 2890px;
-                }  
-                @media screen and (min-width: 520px) {
-                    top: 2860px;
-                }  
-                @media screen and (min-width: 553px) {
-                    top: 2830px;
-                } 
-                @media screen and (min-width: 600px) {
-                    top: 2790px;
-                }  
-                @media screen and (min-width: 624px) {
-                    top: 2760px;
-                }  
-                @media screen and (min-width: 633px) {
-                    top: 2730px;
-                }   
-            }
-             
+            padding: 2%;
+            &:before {
+                content: url('assets/images/muranus.png');                
+                width: 100%;
+                display: block;
+            }             
         }
     }
     @media screen and (min-width: 40em) {
