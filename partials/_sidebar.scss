@@ -40,127 +40,171 @@
         font-family: $primary-font;
         padding: 0 2%;
         font-size: .95rem;
+        color: $color-2;
         h3 {
             font-size: 1.2rem;
             position: relative;
-            left: 20px;
+            
         }
         &:before {
             content: '';
             position: absolute;
             top: 400px;
             right: 1vw;
-            width: 28vw;
-            height: 755px;
-            background: $color-2;				
+            width: 28.5vw;
+            height: 1400px;
+            background: white;	
+            opacity: .8;			
             border-radius: 10px;
-            //box-shadow: 5px 10px 10px black;				
+            @media screen and (min-width: 656px) {
+                height: 1405px; 
+            }
+            @media screen and (min-width: 657px) {
+                height: 1362px; 
+            }
+            @media screen and (min-width: 659px) {
+                height: 1360px; 
+            }
+            @media screen and (min-width: 667px) {
+                height: 1335px; 
+            }
+            @media screen and (min-width: 676px) {
+                height: 1310px; 
+            }
+            @media screen and (min-width: 677px) {
+                height: 1290px; 
+            }
+            @media screen and (min-width: 712px) { 
+                height: 1267px;
+                width: 29vw;
+            }	
+            @media screen and (min-width: 719px) {
+                height: 1242px;
+            }
+            @media screen and (min-width: 747px) {
+                height: 1220px;	
+            }
+            @media screen and (min-width: 781px) {
+                height: 1200px;	
+            }
+            @media screen and (min-width: 795px) {
+                height: 1200px;
+            }
+            @media screen and (min-width: 800px) {
+                height: 1170px;	
+            }	
+            @media screen and (min-width: 850px) {
+                height: 1155px;	
+            }
+            @media screen and (min-width: 852px) {
+                height: 1132px;            	
+            }
+            @media screen and (min-width: 909px) {
+                height: 1135px;
+                width: 29.5vw;	
+            }
+            @media screen and (min-width: 926px) {
+                height: 1112px;	
+            }
+            @media screen and (min-width: 963px) {
+                height: 1095px;	
+            }
+            @media screen and (min-width: 1000px) {
+                height: 1070px;
+            }	
+            @media screen and (min-width: 1040px) {
+                height: 1075px;	
+            }
+            @media screen and (min-width: 1084px) {
+                height: 1055px;
+            }
+            @media screen and (min-width: 1088px) {
+                height: 1030px;
+            }
+            @media screen and (min-width: 1165px) {
+                height: 1012px;
+            }
+            @media screen and (min-width: 1179px) {
+                height: 988px;
+            }
+            @media screen and (min-width: 1232px) {
+                height: 970px;
+            }
+            @media screen and (min-width: 1300px) {
+                height: 1125px;
+                width: 33vw;	
+            }
+            @media screen and (min-width: 1400px) {
+                height: 1135px;
+            }
+            @media screen and (min-width: 1439px) {
+                height: 1110px;
+            }
+            @media screen and (min-width: 1483px) {
+                height: 1090px;
+            }
+            @media screen and (min-width: 1496px) {
+                height: 1070px;
+            }
+            @media screen and (min-width: 1588px) {
+                height: 1050px;	
+            }
+            @media screen and (min-width: 1680px) {
+                height: 1030px;	
+            }
+            @media screen and (min-width: 1685px) {
+                height: 1010px;	
+            }
+            @media screen and (min-width: 1833px) {
+                height: 995px;	
+            }
+            @media screen and (min-width: 2253px) {
+                height: 980px;
+            }
+            @media screen and (min-width: 2376px) {
+                height: 965px;
+                width: 33.5vw;
+            }
+            @media screen and (min-width: 2468px) {
+                height: 945px;	
+            }
         }
         
-        .wrapper h3 {
-            padding-left: 1em;
-        }
-    }
-    @media screen and (min-width: 41em) {
-        &:before {
-            background: orange;
-            height: 730px;
-        }	
-    }
-    @media screen and (min-width: 43em) {
-        &:before {
-            background: pink;
-            width: 30vw;
-            height: 707px;
-        }	
-    }
-    @media screen and (min-width: 46.25em) {
-        &:before {
-            background: purple;
-            //width: 30vw;
-            height: 680px;
-        }	
-    }
-    @media screen and (min-width: 46.75em) {
-        &:before {
-            background: fuchsia;
-            height: 655px;
-        }	
-    }
-    /*@media screen and (min-width: 48em) {
-        &:before {
-            background: olive;
-            height: 76.25vh;
-        }	
-    }*/
-    @media screen and (min-width: 48.6em) {
-        &:before {
-            background: aqua;
-            width: 30.25vw;
-            height: 655px;
-        }	
-    }
-    @media screen and (min-width: 55.65em) {
-        &:before {
-            background: green;
-            width: 30.5vw;
-            height: 610px;
-        }	
-    }
-    @media screen and (min-width: 55.8em) {
-        &:before {
-            background: red;
-            height: 585px;
-        }	
-    }	
-    @media screen and (min-width: 65.85em) {
-        &:before {
-            background: teal;
-            height: 570px;
-        }	
-    }
-    @media screen and (min-width: 71.8em) {
-        &:before {
-            background: coral;
-            height: 545px;
-        }	
-    }	
-    @media screen and (min-width: 77em) {
-        &:before {
-            background: lime;
-            height: 525px;
-        }	
-    }	
-    @media screen and (min-width: 81.5em) {
-        &:before {
-            background: grey;
-            height: 500px;
-        }	
-    }	
-    @media screen and (min-width: 95em) {
-        &:before {
-            background: grey;
-            height: 510px;
-        }	
     }
     .wrapper {
+        li {
+            margin: 20px 0 0 0;
+        }
+        
         @media screen and (max-width: 39.9em) {
             
         }	
         @media screen and (min-width: 40em) {
+            h3 {
+                font-size: 1.2rem;
+                padding: 50px 0 0 1em;
+             }
             width: 45vw;
             position: absolute;
-            top: 420px;
+            top: 375px;
             padding-left: 65vw;
         }
         @media screen and (min-width: 46em) {
+            h3 {
+                font-size: 1.4rem;
+                padding-left: .75em;
+            }
             width: 48vw;
-            top: 410px;
-            padding-left: 63vw;
+            top: 370px;
+            //padding-left: 65vw;
         }
         @media screen and (min-width: 60.5em) {
+            h3 {
+                font-size: 2rem;
+                
+            }
             width: 45vw;
-            top: 430px;
+            top: 375px;
             padding-left: 65vw;
         }
         .design-selection {            
@@ -189,7 +233,7 @@
                 &:hover, &:focus{
                     max-height:500px;
                     & > h3 {
-                    color: $color-3;
+                    color: $color-2;
                     border:3px solid $color-3;
                     opacity:1;
                     }
@@ -204,7 +248,7 @@
             } //end .design-selection small view
             @media screen and (min-width: 40em) {
                 .select { //h3
-                    color: $color-5;
+                    //color: $color-5;
                     margin: 0 5%;
                 }
                 width: 27vw;
@@ -251,7 +295,7 @@
             @media screen and (min-width: 40em) {
                 width: 27vw;
                 .archives { //h3
-                    color: $color-5;
+                    //color: $color-5;
                     margin: 0 5%;
                 }
             } //end .design-archives large view
@@ -298,7 +342,7 @@
             @media screen and (min-width: 40em) {
                 width: 27vw;
                 .resources { //h3
-                    color: $color-5;
+                    //color: $color-5;
                     margin: 0 5%;
                 }
             }

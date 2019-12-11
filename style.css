@@ -967,15 +967,6 @@ body {
   }
 }
 
-.page-wrapper .sidebar {
-  /*@media screen and (min-width: 48em) {
-        &:before {
-            background: olive;
-            height: 76.25vh;
-        }	
-    }*/
-}
-
 .page-wrapper .sidebar li {
   list-style: none;
   background-repeat: no-repeat;
@@ -1027,136 +1018,281 @@ body {
     font-family: "Montserrat", sans-serif;
     padding: 0 2%;
     font-size: .95rem;
+    color: #425b9c;
   }
   .page-wrapper .sidebar h3 {
     font-size: 1.2rem;
     position: relative;
-    left: 20px;
   }
   .page-wrapper .sidebar:before {
     content: '';
     position: absolute;
     top: 400px;
     right: 1vw;
-    width: 28vw;
-    height: 755px;
-    background: #425b9c;
+    width: 28.5vw;
+    height: 1400px;
+    background: white;
+    opacity: .8;
     border-radius: 10px;
   }
-  .page-wrapper .sidebar .wrapper h3 {
-    padding-left: 1em;
+}
+
+@media screen and (min-width: 40em) and (min-width: 656px) {
+  .page-wrapper .sidebar:before {
+    height: 1405px;
   }
 }
 
-@media screen and (min-width: 41em) {
+@media screen and (min-width: 40em) and (min-width: 657px) {
   .page-wrapper .sidebar:before {
-    background: orange;
-    height: 730px;
+    height: 1362px;
   }
 }
 
-@media screen and (min-width: 43em) {
+@media screen and (min-width: 40em) and (min-width: 659px) {
   .page-wrapper .sidebar:before {
-    background: pink;
-    width: 30vw;
-    height: 707px;
+    height: 1360px;
   }
 }
 
-@media screen and (min-width: 46.25em) {
+@media screen and (min-width: 40em) and (min-width: 667px) {
   .page-wrapper .sidebar:before {
-    background: purple;
-    height: 680px;
+    height: 1335px;
   }
 }
 
-@media screen and (min-width: 46.75em) {
+@media screen and (min-width: 40em) and (min-width: 676px) {
   .page-wrapper .sidebar:before {
-    background: fuchsia;
-    height: 655px;
+    height: 1310px;
   }
 }
 
-@media screen and (min-width: 48.6em) {
+@media screen and (min-width: 40em) and (min-width: 677px) {
   .page-wrapper .sidebar:before {
-    background: aqua;
-    width: 30.25vw;
-    height: 655px;
+    height: 1290px;
   }
 }
 
-@media screen and (min-width: 55.65em) {
+@media screen and (min-width: 40em) and (min-width: 712px) {
   .page-wrapper .sidebar:before {
-    background: green;
-    width: 30.5vw;
-    height: 610px;
+    height: 1267px;
+    width: 29vw;
   }
 }
 
-@media screen and (min-width: 55.8em) {
+@media screen and (min-width: 40em) and (min-width: 719px) {
   .page-wrapper .sidebar:before {
-    background: red;
-    height: 585px;
+    height: 1242px;
   }
 }
 
-@media screen and (min-width: 65.85em) {
+@media screen and (min-width: 40em) and (min-width: 747px) {
   .page-wrapper .sidebar:before {
-    background: teal;
-    height: 570px;
+    height: 1220px;
   }
 }
 
-@media screen and (min-width: 71.8em) {
+@media screen and (min-width: 40em) and (min-width: 781px) {
   .page-wrapper .sidebar:before {
-    background: coral;
-    height: 545px;
+    height: 1200px;
   }
 }
 
-@media screen and (min-width: 77em) {
+@media screen and (min-width: 40em) and (min-width: 795px) {
   .page-wrapper .sidebar:before {
-    background: lime;
-    height: 525px;
+    height: 1200px;
   }
 }
 
-@media screen and (min-width: 81.5em) {
+@media screen and (min-width: 40em) and (min-width: 800px) {
   .page-wrapper .sidebar:before {
-    background: grey;
-    height: 500px;
+    height: 1170px;
   }
 }
 
-@media screen and (min-width: 95em) {
+@media screen and (min-width: 40em) and (min-width: 850px) {
   .page-wrapper .sidebar:before {
-    background: grey;
-    height: 510px;
+    height: 1155px;
   }
+}
+
+@media screen and (min-width: 40em) and (min-width: 852px) {
+  .page-wrapper .sidebar:before {
+    height: 1132px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 909px) {
+  .page-wrapper .sidebar:before {
+    height: 1135px;
+    width: 29.5vw;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 926px) {
+  .page-wrapper .sidebar:before {
+    height: 1112px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 963px) {
+  .page-wrapper .sidebar:before {
+    height: 1095px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1000px) {
+  .page-wrapper .sidebar:before {
+    height: 1070px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1040px) {
+  .page-wrapper .sidebar:before {
+    height: 1075px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1084px) {
+  .page-wrapper .sidebar:before {
+    height: 1055px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1088px) {
+  .page-wrapper .sidebar:before {
+    height: 1030px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1165px) {
+  .page-wrapper .sidebar:before {
+    height: 1012px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1179px) {
+  .page-wrapper .sidebar:before {
+    height: 988px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1232px) {
+  .page-wrapper .sidebar:before {
+    height: 970px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1300px) {
+  .page-wrapper .sidebar:before {
+    height: 1125px;
+    width: 33vw;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1400px) {
+  .page-wrapper .sidebar:before {
+    height: 1135px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1439px) {
+  .page-wrapper .sidebar:before {
+    height: 1110px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1483px) {
+  .page-wrapper .sidebar:before {
+    height: 1090px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1496px) {
+  .page-wrapper .sidebar:before {
+    height: 1070px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1588px) {
+  .page-wrapper .sidebar:before {
+    height: 1050px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1680px) {
+  .page-wrapper .sidebar:before {
+    height: 1030px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1685px) {
+  .page-wrapper .sidebar:before {
+    height: 1010px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 1833px) {
+  .page-wrapper .sidebar:before {
+    height: 995px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 2253px) {
+  .page-wrapper .sidebar:before {
+    height: 980px;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 2376px) {
+  .page-wrapper .sidebar:before {
+    height: 965px;
+    width: 33.5vw;
+  }
+}
+
+@media screen and (min-width: 40em) and (min-width: 2468px) {
+  .page-wrapper .sidebar:before {
+    height: 945px;
+  }
+}
+
+.page-wrapper .sidebar .wrapper li {
+  margin: 20px 0 0 0;
 }
 
 @media screen and (min-width: 40em) {
   .page-wrapper .sidebar .wrapper {
     width: 45vw;
     position: absolute;
-    top: 420px;
+    top: 375px;
     padding-left: 65vw;
+  }
+  .page-wrapper .sidebar .wrapper h3 {
+    font-size: 1.2rem;
+    padding: 50px 0 0 1em;
   }
 }
 
 @media screen and (min-width: 46em) {
   .page-wrapper .sidebar .wrapper {
     width: 48vw;
-    top: 410px;
-    padding-left: 63vw;
+    top: 370px;
+  }
+  .page-wrapper .sidebar .wrapper h3 {
+    font-size: 1.4rem;
+    padding-left: .75em;
   }
 }
 
 @media screen and (min-width: 60.5em) {
   .page-wrapper .sidebar .wrapper {
     width: 45vw;
-    top: 430px;
+    top: 375px;
     padding-left: 65vw;
+  }
+  .page-wrapper .sidebar .wrapper h3 {
+    font-size: 2rem;
   }
 }
 
@@ -1193,7 +1329,7 @@ body {
     max-height: 500px;
   }
   .page-wrapper .sidebar .wrapper .design-selection:hover > h3, .page-wrapper .sidebar .wrapper .design-selection:focus > h3 {
-    color: #e2648f;
+    color: #425b9c;
     border: 3px solid #e2648f;
     opacity: 1;
   }
@@ -1212,7 +1348,6 @@ body {
     width: 27vw;
   }
   .page-wrapper .sidebar .wrapper .design-selection .select {
-    color: #ffffff;
     margin: 0 5%;
   }
 }
@@ -1268,7 +1403,6 @@ body {
     width: 27vw;
   }
   .page-wrapper .sidebar .wrapper .design-archives .archives {
-    color: #ffffff;
     margin: 0 5%;
   }
 }
@@ -1324,7 +1458,6 @@ body {
     width: 27vw;
   }
   .page-wrapper .sidebar .wrapper .zen-resources .resources {
-    color: #ffffff;
     margin: 0 5%;
   }
 }
