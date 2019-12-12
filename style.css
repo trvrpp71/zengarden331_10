@@ -391,7 +391,16 @@ body {
           flex-flow: column wrap;
 }
 
-@media screen and (max-width: 39.9em) {
+@media screen and (max-width: 360px) {
+  .page-wrapper {
+    text-align: center;
+  }
+  .page-wrapper h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 361px) {
   .page-wrapper {
     text-align: center;
   }
