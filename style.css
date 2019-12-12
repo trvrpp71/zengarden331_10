@@ -59,11 +59,10 @@ p a {
   text-decoration: underline;
 }
 
-#zen-intro:before, #zen-summary:before, #zen-preamble:before, #zen-supporting:before, #zen-intro:after, #zen-summary:after, #zen-preamble:after, #zen-supporting:after {
+#zen-intro:before, #zen-summary:before, #zen-preamble:before, #zen-supporting:before, #zen-intro:after, #zen-summary:after, #zen-preamble:after, #zen-supporting:after, .intro:before, .summary:before, .preamble:before, .supporting:before, .intro:after, .summary:after, .preamble:after, .supporting:after {
   content: "";
   width: .3em;
   height: .3em;
-  background-color: white;
   z-index: 4;
   position: absolute;
   -webkit-transform: scale(0);
@@ -73,57 +72,129 @@ p a {
 #zen-intro:before {
   top: 25%;
   right: 5%;
+  background-color: #a3b3d8;
   -webkit-animation: shootingstarLD 5s 3s infinite linear;
           animation: shootingstarLD 5s 3s infinite linear;
 }
 
+#zen-intro:after {
+  top: 35%;
+  left: 5%;
+  background-color: #425b9c;
+  -webkit-animation: shootingstarRD 3s 3s infinite linear;
+          animation: shootingstarRD 3s 3s infinite linear;
+}
+
 #zen-summary:before {
-  top: 75%;
+  top: 45%;
   left: 10%;
+  background-color: #e2648f;
   -webkit-animation: shootingstarRU 6s infinite linear;
           animation: shootingstarRU 6s infinite linear;
 }
 
-#zen-preamble:before, #benefits:before {
-  top: 150%;
+#zen-summary:after {
+  top: 75%;
+  right: 10%;
+  background-color: #444444;
+  -webkit-animation: shootingstarLD 4s infinite linear;
+          animation: shootingstarLD 4s infinite linear;
+}
+
+#zen-preamble:before {
+  top: 85%;
   left: 25%;
+  background-color: #ffffff;
   -webkit-animation: shootingstarRD 8s 2s infinite linear;
           animation: shootingstarRD 8s 2s infinite linear;
 }
 
+#zen-preamble:after {
+  top: 100%;
+  right: 25%;
+  background-color: #a3b3d8;
+  -webkit-animation: shootingstarLD 5s infinite linear;
+          animation: shootingstarLD 5s infinite linear;
+}
+
 #zen-supporting:before {
-  top: 200%;
+  top: 130%;
   right: 20%;
+  background-color: #425b9c;
   -webkit-animation: shootingstarRU 5s infinite linear;
           animation: shootingstarRU 5s infinite linear;
 }
 
-#zen-intro:after {
-  top: 250%;
-  right: 50%;
-  -webkit-animation: shootingstarLD 5s 3s infinite linear;
-          animation: shootingstarLD 5s 3s infinite linear;
+#zen-supporting:after {
+  top: 180%;
+  left: 20%;
+  background-color: #e2648f;
+  -webkit-animation: shootingstarRD 3s 1s infinite linear;
+          animation: shootingstarRD 3s 1s infinite linear;
 }
 
-#zen-summary:after {
+.intro:before {
+  top: 200%;
+  right: 50%;
+  background-color: #444444;
+  -webkit-animation: shootingstarRU 4s 2s infinite linear;
+          animation: shootingstarRU 4s 2s infinite linear;
+}
+
+.intro:after {
+  top: 230%;
+  left: 30%;
+  background-color: #ffffff;
+  -webkit-animation: shootingstarRD 5s 3s infinite linear;
+          animation: shootingstarRD 5s 3s infinite linear;
+}
+
+.summary:before {
   top: 250%;
+  right: 10%;
+  background-color: #a3b3d8;
+  -webkit-animation: shootingstarLD 4s infinite linear;
+          animation: shootingstarLD 4s infinite linear;
+}
+
+.summary:after {
+  top: 280%;
   left: 10%;
+  background-color: #425b9c;
   -webkit-animation: shootingstarRU 6s infinite linear;
           animation: shootingstarRU 6s infinite linear;
 }
 
-#zen-preamble:after {
+.preamble:before {
   top: 320%;
   left: 25%;
-  -webkit-animation: shootingstarRD 8s 2s infinite linear;
-          animation: shootingstarRD 8s 2s infinite linear;
+  background-color: #e2648f;
+  -webkit-animation: shootingstarRD 6s 2s infinite linear;
+          animation: shootingstarRD 6s 2s infinite linear;
 }
 
-#zen-supporting:after {
+.preamble:after {
+  top: 350%;
+  right: 25%;
+  background-color: #444444;
+  -webkit-animation: shootingstarLD 8s -2s infinite linear;
+          animation: shootingstarLD 8s -2s infinite linear;
+}
+
+.supporting:before {
+  top: 380%;
+  right: 40%;
+  background-color: #ffffff;
+  -webkit-animation: shootingstarRD 5s infinite linear;
+          animation: shootingstarRD 5s infinite linear;
+}
+
+.supporting:after {
   top: 400%;
-  right: 20%;
-  -webkit-animation: shootingstarLD 5s infinite linear;
-          animation: shootingstarLD 5s infinite linear;
+  left: 40%;
+  background-color: #a3b3d8;
+  -webkit-animation: shootingstarLD 4s infinite linear;
+          animation: shootingstarLD 4s infinite linear;
 }
 
 @-webkit-keyframes shootingstarLD {
@@ -320,16 +391,7 @@ body {
           flex-flow: column wrap;
 }
 
-@media screen and (max-width: 370px) {
-  .page-wrapper {
-    text-align: center;
-  }
-  .page-wrapper h3 {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 371px) {
+@media screen and (max-width: 39.9em) {
   .page-wrapper {
     text-align: center;
   }
@@ -964,6 +1026,31 @@ body {
     width: 95vw;
     margin: 150vh auto 0 auto;
     padding: 1%;
+  }
+  .page-wrapper .main footer .zen-validate-html, .page-wrapper .main footer .zen-license, .page-wrapper .main footer .zen-validate-css, .page-wrapper .main footer .zen-accessibility {
+    padding-left: 2em;
+    padding-right: 2em;
+    border-right: solid 2px #425b9c;
+  }
+  .page-wrapper .main footer .zen-github {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media screen and (min-width: 66em) {
+  .page-wrapper .main footer {
+    width: 95vw;
+    margin: 150vh auto 0 auto;
+    padding: 1%;
+    -webkit-transform: perspective(30em) rotateY(60deg) rotateX(25deg);
+            transform: perspective(30em) rotateY(60deg) rotateX(25deg);
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+  }
+  .page-wrapper .main footer .main {
+    -webkit-perspective: 10em;
+            perspective: 10em;
   }
   .page-wrapper .main footer .zen-validate-html, .page-wrapper .main footer .zen-license, .page-wrapper .main footer .zen-validate-css, .page-wrapper .main footer .zen-accessibility {
     padding-left: 2em;

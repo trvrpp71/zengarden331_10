@@ -8,6 +8,7 @@ footer {
     opacity: .8;
     border: 3px solid $color-2;
     border-radius: 10px;
+
     a:link {
         color: $color-2;
         text-decoration: none;
@@ -53,4 +54,23 @@ footer {
             padding-right: 2em;
         }
     } //end footer large view (no small view code)
+    @media screen and (min-width: 66em) { //start of large screen perspective of header
+        width: 95vw;
+        margin: 150vh auto 0 auto;
+        padding: 1%;
+        transform:perspective(30em) rotateY(60deg) rotateX(25deg);
+        transition:all 1.5s ease;
+        .main {
+            perspective:10em;
+        }
+        .zen-validate-html, .zen-license, .zen-validate-css, .zen-accessibility {
+            padding-left: 2em;
+            padding-right: 2em;
+            border-right: solid 2px $color-2;
+        } 
+        .zen-github {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+    } //end footer large view with perspective
 } //end footer

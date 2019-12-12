@@ -1,8 +1,7 @@
-#zen-intro:before, #zen-summary:before, #zen-preamble:before, #zen-supporting:before, #zen-intro:after, #zen-summary:after, #zen-preamble:after, #zen-supporting:after{
+#zen-intro:before, #zen-summary:before, #zen-preamble:before, #zen-supporting:before, #zen-intro:after, #zen-summary:after, #zen-preamble:after, #zen-supporting:after, .intro:before, .summary:before, .preamble:before, .supporting:before, .intro:after, .summary:after, .preamble:after, .supporting:after{
 	content: "";
 	width: .3em;
 	height: .3em;
-	background-color: white;
 	z-index: 4;
 	position: absolute;
 	transform: scale(0);
@@ -11,49 +10,113 @@
 #zen-intro:before {
 	top: 25%;
 	right: 5%;
+	background-color: $color-1;
 	animation: shootingstarLD 5s 3s infinite linear;
-}
-
-#zen-summary:before{
-	top: 75%;
-	left: 10%;
-	animation: shootingstarRU 6s infinite linear;
-}
-
-#zen-preamble:before, #benefits:before {
-	top: 150%;
-	left: 25%;
-	animation: shootingstarRD 8s 2s infinite linear;
-}
-
-#zen-supporting:before {
-	top: 200%;
-	right: 20%;
-	animation: shootingstarRU 5s infinite linear;
 }
 
 #zen-intro:after {
-	top: 250%;
-	right: 50%;
-	animation: shootingstarLD 5s 3s infinite linear;
+	top: 35%;
+	left: 5%;
+	background-color: $color-2;
+	animation: shootingstarRD 3s 3s infinite linear;
 }
 
-#zen-summary:after{
-	top: 250%;
+#zen-summary:before{
+	top: 45%;
 	left: 10%;
+	background-color: $color-3;
 	animation: shootingstarRU 6s infinite linear;
 }
 
-#zen-preamble:after {
-	top: 320%;
+#zen-summary:after{
+	top: 75%;
+	right: 10%;
+	background-color: $color-4;
+	animation: shootingstarLD 4s infinite linear;
+}
+
+#zen-preamble:before {
+	top: 85%;
 	left: 25%;
+	background-color: $color-5;
 	animation: shootingstarRD 8s 2s infinite linear;
 }
 
-#zen-supporting:after {
-	top: 400%;
-	right: 20%;
+#zen-preamble:after {
+	top: 100%;
+	right: 25%;
+	background-color: $color-1;
 	animation: shootingstarLD 5s infinite linear;
+}
+
+#zen-supporting:before {
+	top: 130%;
+	right: 20%;
+	background-color: $color-2;
+	animation: shootingstarRU 5s infinite linear;
+}
+
+#zen-supporting:after {
+	top: 180%;
+	left: 20%;
+	background-color: $color-3;
+	animation: shootingstarRD 3s 1s infinite linear;
+}
+
+.intro:before {
+	top: 200%;
+	right: 50%;
+	background-color: $color-4;
+	animation: shootingstarRU 4s 2s infinite linear;
+}
+
+.intro:after {
+	top: 230%;
+	left: 30%;
+	background-color: $color-5;
+	animation: shootingstarRD 5s 3s infinite linear;
+}
+
+.summary:before{
+	top: 250%;
+	right: 10%;
+	background-color: $color-1;
+	animation: shootingstarLD 4s infinite linear;
+}
+
+.summary:after{
+	top: 280%;
+	left: 10%;
+	background-color: $color-2;
+	animation: shootingstarRU 6s infinite linear;
+}
+
+.preamble:before {
+	top: 320%;
+	left: 25%;
+	background-color: $color-3;
+	animation: shootingstarRD 6s 2s infinite linear;
+}
+
+.preamble:after {
+	top: 350%;
+	right: 25%;
+	background-color: $color-4;
+	animation: shootingstarLD 8s -2s infinite linear;
+}
+
+.supporting:before {
+	top: 380%;
+	right: 40%;
+	background-color: $color-5;
+	animation: shootingstarRD 5s infinite linear;
+}
+
+.supporting:after {
+	top: 400%;
+	left: 40%;
+	background-color: $color-1;
+	animation: shootingstarLD 4s infinite linear;
 }
 
 

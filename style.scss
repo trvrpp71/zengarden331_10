@@ -20,13 +20,7 @@ body {
 .page-wrapper {
 	display: flex;
 	flex-flow: column wrap;
-	@media screen and (max-width: 370px) {
-		text-align: center;
-		h3 {
-			font-size: 1.2rem;
-		}
-	}
-	@media screen and (min-width: 371px) {
+	@media screen and (max-width: 39.9em) {
 		text-align: center;
 		h3 {
             font-size: 2rem;
