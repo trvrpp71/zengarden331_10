@@ -16,12 +16,14 @@
             background-color: white;
             opacity: .8;
             border-radius: 10px;
-            padding: 2%;
             transition:1s;
+            position: relative;
+            top: -7px;
             &:before {
-                content: url('assets/images/mjupiter.png');                
+                content: url('assets/images/m2jupiter.png');                
                 width: 100%;
-                display: block;               
+                display: block; 
+                padding: 2% 0 0 0;            
             }			
         }
         ul, p, p ~ p {					

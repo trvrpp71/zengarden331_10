@@ -701,14 +701,16 @@ body {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
-    padding: 2%;
     -webkit-transition: 1s;
     transition: 1s;
+    position: relative;
+    top: -7px;
   }
   .page-wrapper .main .explanation h3:before {
-    content: url("assets/images/mjupiter.png");
+    content: url("assets/images/m2jupiter.png");
     width: 100%;
     display: block;
+    padding: 2% 0 0 0;
   }
   .page-wrapper .main .explanation ul, .page-wrapper .main .explanation p, .page-wrapper .main .explanation p ~ p {
     opacity: 0;
@@ -822,7 +824,7 @@ body {
     padding: 2%;
   }
   .page-wrapper .main .participation h3:before {
-    content: url("assets/images/msaturn.png");
+    content: url("assets/images/m3saturn.png");
     width: 100%;
     display: block;
   }
@@ -891,9 +893,11 @@ body {
   }
   .page-wrapper .main .benefits h3 {
     padding: 2%;
+    position: relative;
+    top: -7px;
   }
   .page-wrapper .main .benefits h3:before {
-    content: url("assets/images/muranus.png");
+    content: url("assets/images/m4neptune.png");
     width: 100%;
     display: block;
   }
@@ -961,13 +965,11 @@ body {
     max-height: 100px;
     transitioni: max-height 1s ease;
   }
-  .page-wrapper .main .requirements h3 {
-    padding: 2%;
-  }
   .page-wrapper .main .requirements h3:before {
-    content: url("assets/images/mneptune.png");
+    content: url("assets/images/m3uranus.png");
     width: 100%;
     display: block;
+    margin: -20px 0 -25px 0;
   }
 }
 
