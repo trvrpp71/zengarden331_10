@@ -58,19 +58,21 @@ footer {
         width: 95vw;
         margin: 150vh auto 0 auto;
         padding: 1%;
+        border-right: none;
         transform:perspective(30em) rotateY(60deg) rotateX(25deg);
         transition:all 1.5s ease;
+        font-size: 2.5em;
         .main {
             perspective:10em;
         }
         .zen-validate-html, .zen-license, .zen-validate-css, .zen-accessibility {
-            padding-left: 2em;
-            padding-right: 2em;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
             border-right: solid 2px $color-2;
         } 
         .zen-github {
-            padding-left: 2em;
-            padding-right: 2em;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
         }
     } //end footer large view with perspective
 } //end footer

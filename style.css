@@ -398,19 +398,25 @@ body {
   .page-wrapper h3 {
     font-size: 1.5rem;
   }
+  .page-wrapper p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
 }
 
 @media screen and (min-width: 361px) {
   .page-wrapper {
-    text-align: center;
+    /*@media screen and (max-width: 39.9em) {	
+		text-align: center;*/
   }
   .page-wrapper h3 {
+    text-align: center;
     font-size: 2rem;
     color: #425b9c;
   }
   .page-wrapper p {
     font-size: 1rem;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 
@@ -1052,23 +1058,25 @@ body {
     width: 95vw;
     margin: 150vh auto 0 auto;
     padding: 1%;
+    border-right: none;
     -webkit-transform: perspective(30em) rotateY(60deg) rotateX(25deg);
             transform: perspective(30em) rotateY(60deg) rotateX(25deg);
     -webkit-transition: all 1.5s ease;
     transition: all 1.5s ease;
+    font-size: 2.5em;
   }
   .page-wrapper .main footer .main {
     -webkit-perspective: 10em;
             perspective: 10em;
   }
   .page-wrapper .main footer .zen-validate-html, .page-wrapper .main footer .zen-license, .page-wrapper .main footer .zen-validate-css, .page-wrapper .main footer .zen-accessibility {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     border-right: solid 2px #425b9c;
   }
   .page-wrapper .main footer .zen-github {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 }
 
