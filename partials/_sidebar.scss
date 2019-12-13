@@ -25,26 +25,13 @@
         
     }
     
-    a:link {			
-        text-decoration: none;
-        color: lighten($color-3, 3%);
-    }
-    a:hover {
-        color: $color-1;
-    }
-    a:active {
-        color: $color-4;
-    }
     @media screen and (max-width: 39.9em) {        
         order:2;
         width: 90vw;
         margin: 0 auto;
     }	
     @media screen and (min-width: 40em) {
-        font-family: $primary-font;
         padding: 0 2%;
-        font-size: .95rem;
-        color: $color-2;
         h3 {
             font-size: 1.2rem;
             position: relative;
