@@ -59,7 +59,8 @@ footer {
         margin: 150vh auto 0 auto;
         padding: 1%;
         border-right: none;
-        transform:perspective(30em) rotateY(60deg) rotateX(25deg);
+        transform-origin:center;
+        transform:perspective(30em) rotateY(60deg) rotateX(10deg) rotateZ(-20deg);
         transition:all 1.5s ease;
         font-size: 2.5em;
         .main {

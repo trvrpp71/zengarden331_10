@@ -1077,8 +1077,10 @@ body {
     margin: 150vh auto 0 auto;
     padding: 1%;
     border-right: none;
-    -webkit-transform: perspective(30em) rotateY(60deg) rotateX(25deg);
-            transform: perspective(30em) rotateY(60deg) rotateX(25deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: perspective(30em) rotateY(60deg) rotateX(10deg) rotateZ(-20deg);
+            transform: perspective(30em) rotateY(60deg) rotateX(10deg) rotateZ(-20deg);
     -webkit-transition: all 1.5s ease;
     transition: all 1.5s ease;
     font-size: 2.5em;
