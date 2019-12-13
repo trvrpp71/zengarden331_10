@@ -58,12 +58,20 @@
         background: #f2f2f2;
         opacity: .8;
         border-radius: 10px;
-        margin: .15% 32% .15% 1%;
-        padding: 2%;     
-    } //end .explanation medium view		
+        margin: 0 30% 10px 10px;
+        padding: 2%;  
+        width: 62vw;   
+        height: 650px;
+    }
+    @media screen and (min-width: 800px) {
+        height: 500px;
+    } 	
+    @media screen and (min-width: 1000px)  {
+        height: 450px;
+    }	
     @media screen and (min-width: 1300px) {
-        width: 74vw;
-        margin: .15% 35.5% .15% 1%;
+        width: 44vw;
+        margin: 0 35.5% 10px 10px;
         padding: 1% 20vw 1% 3%;
         h3:after {
             content: '';         
@@ -75,5 +83,8 @@
             left: 70%;   
             top: 25%;        
         }
+    }
+    @media screen and (min-width: 1800px) {
+        margin: 0 36% 10px 10px;
     }
 } //end .explanation

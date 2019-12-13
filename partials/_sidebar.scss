@@ -42,123 +42,53 @@
             position: absolute;
             top: 400px;
             right: 1vw;
-            width: 28.5vw;
-            height: 1400px;
+            width: 28vw;
+            height: 1500px;
             background: white;	
             opacity: .8;			
             border-radius: 10px;
-            @media screen and (min-width: 656px) {
-                height: 1405px; 
-            }
-            @media screen and (min-width: 657px) {
-                height: 1362px; 
-            }
-            @media screen and (min-width: 659px) {
-                height: 1360px; 
-            }
-            @media screen and (min-width: 667px) {
-                height: 1335px; 
-            }
-            @media screen and (min-width: 676px) {
-                height: 1310px; 
-            }
-            @media screen and (min-width: 677px) {
-                height: 1290px; 
-            }
-            @media screen and (min-width: 712px) { 
-                height: 1267px;
-                width: 29vw;
-            }	
-            @media screen and (min-width: 719px) {
-                height: 1242px;
-            }
-            @media screen and (min-width: 747px) {
-                height: 1220px;	
-            }
-            @media screen and (min-width: 781px) {
-                height: 1200px;	
-            }
-            @media screen and (min-width: 795px) {
-                height: 1200px;
+            @media screen and (min-width: 700px) {
+                height: 1510px
             }
             @media screen and (min-width: 800px) {
-                height: 1170px;	
-            }	
-            @media screen and (min-width: 850px) {
-                height: 1155px;	
+                width: 29vw;
+                height: 1245px;
             }
-            @media screen and (min-width: 852px) {
-                height: 1132px;            	
-            }
-            @media screen and (min-width: 909px) {
-                height: 1135px;
-                width: 29.5vw;	
-            }
-            @media screen and (min-width: 926px) {
-                height: 1112px;	
-            }
-            @media screen and (min-width: 963px) {
-                height: 1095px;	
+            @media screen and (min-width: 900px) {
+                height: 1255px;
             }
             @media screen and (min-width: 1000px) {
-                height: 1070px;
-            }	
-            @media screen and (min-width: 1040px) {
-                height: 1075px;	
+                width: 29.5vw;
+                height: 1130px;
             }
-            @media screen and (min-width: 1084px) {
-                height: 1055px;
+            @media screen and (min-width: 1100px) {
+                height: 1140px; 
             }
-            @media screen and (min-width: 1088px) {
-                height: 1030px;
-            }
-            @media screen and (min-width: 1165px) {
-                height: 1012px;
-            }
-            @media screen and (min-width: 1179px) {
-                height: 988px;
-            }
-            @media screen and (min-width: 1232px) {
-                height: 970px;
+            @media screen and (min-width: 1200px) {
+                height: 1150px;
+                width: 30.5vw;
             }
             @media screen and (min-width: 1300px) {
                 height: 1125px;
-                width: 33vw;	
+                width: 33.5vw;
             }
             @media screen and (min-width: 1400px) {
                 height: 1135px;
             }
-            @media screen and (min-width: 1439px) {
-                height: 1110px;
+            @media screen and (min-width: 1600px) {
+                height: 1145px;
             }
-            @media screen and (min-width: 1483px) {
-                height: 1090px;
+            @media screen and (min-width: 1800px) {
+                height: 1160px;
+                width: 34vw;
             }
-            @media screen and (min-width: 1496px) {
-                height: 1070px;
+            @media screen and (min-width: 2000px) {
+                height: 1170px;
+                width: 35vw;
             }
-            @media screen and (min-width: 1588px) {
-                height: 1050px;	
-            }
-            @media screen and (min-width: 1680px) {
-                height: 1030px;	
-            }
-            @media screen and (min-width: 1685px) {
-                height: 1010px;	
-            }
-            @media screen and (min-width: 1833px) {
-                height: 995px;	
-            }
-            @media screen and (min-width: 2253px) {
-                height: 980px;
-            }
-            @media screen and (min-width: 2376px) {
-                height: 965px;
-                width: 33.5vw;
-            }
-            @media screen and (min-width: 2468px) {
-                height: 945px;	
-            }
+            @media screen and (min-width: 2300px) {
+                height: 1190px;
+            }            
         }
         
     }
