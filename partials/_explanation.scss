@@ -18,7 +18,7 @@
             border-radius: 10px;
             transition:1s;
             position: relative;
-            top: -7px;
+            top: -10px;
             &:before {
                 content: url('assets/images/m2jupiter.png');                
                 width: 100%;
@@ -49,13 +49,18 @@
         }
                         
     } //end .explanation small view			
-    @media screen and (min-width: 40em) {          
+    @media screen and (min-width: 40em) {    
+        h3 {
+            text-align: left;
+            padding: 0 0 0 2%;
+        }      
         order: 1;
         background: #f2f2f2;
         opacity: .8;
         border-radius: 10px;
         margin: .15% 32% .15% 1%;
-        padding: 2%;        
+        padding: 2%;   
+        //transition-duration:all 0s;     
     } //end .explanation medium view		
     @media screen and (min-width: 1300px) {
         width: 74vw;

@@ -35,6 +35,8 @@
         margin: 5px auto 0 auto;
         h3 {
             padding: 2%;
+            position: relative;
+            top: -8px;
             &:before {
                 content: url('assets/images/m3saturn.png');                
                 width: 100%;

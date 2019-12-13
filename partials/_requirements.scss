@@ -36,9 +36,8 @@
         max-height:100px;
         transitioni:max-height 1s ease;
         h3 {
-            //padding: 2%; 
-            //padding: 0 0 10px 0;
-            //margin: 20px 0 0 0;
+            position: relative;
+            top: -3px;
             &:before {
                 content: url('assets/images/m3uranus.png');                
                 width: 100%;

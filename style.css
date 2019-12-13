@@ -9,10 +9,6 @@ h1, h2, h3 {
   color: #425b9c;
 }
 
-p {
-  font-family: "Montserrat", sans-serif;
-}
-
 h1 {
   font-size: 4.4rem;
   font-weight: 300;
@@ -45,18 +41,23 @@ section > h2::before {
 }
 
 p {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   line-height: 1.4;
-  color: #8ea0cf;
+  color: #3f5795;
   /*  @include MQ(S) {
     font-size: 1.4rem;
     line-height: 1.4;
   }*/
 }
 
-p a {
+p a:link {
+  text-decoration: none;
+  color: #ea8fae;
+}
+
+p a:hover {
   color: #a3b3d8;
-  text-decoration: underline;
 }
 
 #zen-intro:before, #zen-summary:before, #zen-preamble:before, #zen-supporting:before, #zen-intro:after, #zen-summary:after, #zen-preamble:after, #zen-supporting:after, .intro:before, .summary:before, .preamble:before, .supporting:before, .intro:after, .summary:after, .preamble:after, .supporting:after {
@@ -629,6 +630,10 @@ body {
   .page-wrapper .intro .preamble {
     width: 60vw;
   }
+  .page-wrapper .intro .preamble h3 {
+    text-align: left;
+    padding: 0 0 0 2%;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -704,7 +709,7 @@ body {
     -webkit-transition: 1s;
     transition: 1s;
     position: relative;
-    top: -7px;
+    top: -10px;
   }
   .page-wrapper .main .explanation h3:before {
     content: url("assets/images/m2jupiter.png");
@@ -749,6 +754,10 @@ body {
     border-radius: 10px;
     margin: .15% 32% .15% 1%;
     padding: 2%;
+  }
+  .page-wrapper .main .explanation h3 {
+    text-align: left;
+    padding: 0 0 0 2%;
   }
 }
 
@@ -822,6 +831,8 @@ body {
   }
   .page-wrapper .main .participation h3 {
     padding: 2%;
+    position: relative;
+    top: -8px;
   }
   .page-wrapper .main .participation h3:before {
     content: url("assets/images/m3saturn.png");
@@ -894,7 +905,7 @@ body {
   .page-wrapper .main .benefits h3 {
     padding: 2%;
     position: relative;
-    top: -7px;
+    top: -15px;
   }
   .page-wrapper .main .benefits h3:before {
     content: url("assets/images/m4neptune.png");
@@ -964,6 +975,10 @@ body {
     margin: 40px auto 100px auto;
     max-height: 100px;
     transitioni: max-height 1s ease;
+  }
+  .page-wrapper .main .requirements h3 {
+    position: relative;
+    top: -3px;
   }
   .page-wrapper .main .requirements h3:before {
     content: url("assets/images/m3uranus.png");
@@ -1089,6 +1104,13 @@ body {
   padding-left: 15px;
 }
 
+.page-wrapper .sidebar li:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .page-wrapper .sidebar li:nth-child(3n+1) {
   background-image: url("assets/images/smercury.png");
 }
@@ -1138,6 +1160,7 @@ body {
   .page-wrapper .sidebar h3 {
     font-size: 1.2rem;
     position: relative;
+    text-align: left;
   }
   .page-wrapper .sidebar:before {
     content: '';
@@ -1418,7 +1441,6 @@ body {
     transition: max-height 1s ease;
   }
   .page-wrapper .sidebar .wrapper .design-selection h3 {
-    max-height: 100px;
     background-color: white;
     opacity: .8;
     border-radius: 10px;
@@ -1444,7 +1466,7 @@ body {
     max-height: 500px;
   }
   .page-wrapper .sidebar .wrapper .design-selection:hover > h3, .page-wrapper .sidebar .wrapper .design-selection:focus > h3 {
-    color: #425b9c;
+    color: #e2648f;
     border: 3px solid #e2648f;
     opacity: 1;
   }
@@ -1562,7 +1584,7 @@ body {
     background-color: white;
     opacity: .8;
     border-radius: 10px;
-    padding: 2%;
+    padding: 2% 2% 5% 10%;
     -webkit-transform: scale(1);
             transform: scale(1);
   }

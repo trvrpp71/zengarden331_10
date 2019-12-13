@@ -5,9 +5,13 @@
         background-repeat: no-repeat;
         background-position: 1px 3px;
         padding-left: 15px;
-        
+        &:hover {
+            transform: scale(1.1,1.1);
+            transition: 1s;  
+        }
         &:nth-child(3n+1) {
             background-image: url("assets/images/smercury.png")
+            
         }
         &:nth-child(3n+2) {
             background-image: url("assets/images/svenus.png")
@@ -44,7 +48,7 @@
         h3 {
             font-size: 1.2rem;
             position: relative;
-            
+            text-align: left;
         }
         &:before {
             content: '';
@@ -212,7 +216,6 @@
                 max-height:100px;
                 transition:max-height 1s ease;
                 h3 {
-                    max-height:100px;
                     background-color: white;
                     opacity: .8;
                     border-radius: 10px;
@@ -221,7 +224,7 @@
                     &:before {
                         content: url('assets/images/mvenus.png');
                         width: 100%;
-                        display: block;                       
+                        display: block;             
                     }
                 }					
                 &>nav {
@@ -233,7 +236,7 @@
                 &:hover, &:focus{
                     max-height:500px;
                     & > h3 {
-                    color: $color-2;
+                    color: $color-3;
                     border:3px solid $color-3;
                     opacity:1;
                     }
@@ -248,7 +251,6 @@
             } //end .design-selection small view
             @media screen and (min-width: 40em) {
                 .select { //h3
-                    //color: $color-5;
                     margin: 0 5%;
                 }
                 width: 27vw;
@@ -267,7 +269,7 @@
                     &:before {
                         content: url('assets/images/mearth.png');        
                         width: 100%;
-                        display: block;                        
+                        display: block;             
                     }
                 }					
                &>nav {
@@ -295,7 +297,6 @@
             @media screen and (min-width: 40em) {
                 width: 27vw;
                 .archives { //h3
-                    //color: $color-5;
                     margin: 0 5%;
                 }
             } //end .design-archives large view
@@ -311,9 +312,9 @@
                     padding: 2%;
                     transition:1s;
                     &:before {
-                        content: url('assets/images/mmars.png');                        
+                        content: url('assets/images/mmars.png');                
                         width: 100%;
-                        display: block;                  
+                        display: block;             
                     }
                 }
                 
@@ -334,7 +335,7 @@
                         background-color: white;
                         opacity: .8;
                         border-radius: 10px;
-                        padding: 2%;
+                        padding: 2% 2% 5% 10%;
                         transform:scale(1);
                     }
                 }
@@ -342,7 +343,6 @@
             @media screen and (min-width: 40em) {
                 width: 27vw;
                 .resources { //h3
-                    //color: $color-5;
                     margin: 0 5%;
                 }
             }

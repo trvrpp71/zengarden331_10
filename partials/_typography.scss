@@ -9,9 +9,7 @@ h1,h2,h3 {
   font-family: $secondary-font;
   color: $color-2;
 }
-p {
-  font-family:$primary-font;
-}
+
 h1 {
   font-size: 4.4rem;
   font-weight: 300;
@@ -44,13 +42,17 @@ section > h2::before {
 }
 
 p {
+  font-family:$primary-font;
   font-size: 1.2rem;
   line-height: 1.4;
-  color: lighten($color-2, 25%);
-
-  a {
-    color: $color-1;
-    text-decoration: underline;
+  color: darken($color-2, 2%);
+  a:link {
+    text-decoration: none;
+    color: lighten($color-3, 10%);
+  }
+  a:hover {
+      color: $color-1;
+      
   }
 
 /*  @include MQ(S) {
