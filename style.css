@@ -634,23 +634,6 @@ body {
   padding: 0 10px;
 }
 
-.page-wrapper .intro .summary p a:link, .page-wrapper .intro .preamble p a:link {
-  text-decoration: none;
-  color: #e6799f;
-}
-
-.page-wrapper .intro .summary p a:visited, .page-wrapper .intro .preamble p a:visited {
-  color: #e6799f;
-}
-
-.page-wrapper .intro .summary p a:hover, .page-wrapper .intro .preamble p a:hover {
-  color: #a3b3d8;
-}
-
-.page-wrapper .intro .summary p a:active, .page-wrapper .intro .preamble p a:active {
-  color: #444444;
-}
-
 @media screen and (max-width: 39.9em) {
   .page-wrapper .intro .summary, .page-wrapper .intro .preamble {
     width: 88vw;
