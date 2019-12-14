@@ -634,6 +634,23 @@ body {
   padding: 0 10px;
 }
 
+.page-wrapper .intro .summary p a:link, .page-wrapper .intro .preamble p a:link {
+  text-decoration: none;
+  color: #e6799f;
+}
+
+.page-wrapper .intro .summary p a:visited, .page-wrapper .intro .preamble p a:visited {
+  color: #e6799f;
+}
+
+.page-wrapper .intro .summary p a:hover, .page-wrapper .intro .preamble p a:hover {
+  color: #a3b3d8;
+}
+
+.page-wrapper .intro .summary p a:active, .page-wrapper .intro .preamble p a:active {
+  color: #444444;
+}
+
 @media screen and (max-width: 39.9em) {
   .page-wrapper .intro .summary, .page-wrapper .intro .preamble {
     width: 88vw;
@@ -880,6 +897,7 @@ body {
 @media screen and (min-width: 1300px) {
   .page-wrapper .main .explanation {
     width: 44vw;
+    height: 500px;
     margin: 0 35.5% 10px 10px;
     padding: 1% 20vw 1% 3%;
   }
@@ -898,6 +916,7 @@ body {
 @media screen and (min-width: 1800px) {
   .page-wrapper .main .explanation {
     margin: 0 36% 10px 10px;
+    height: 450px;
   }
 }
 
@@ -1304,20 +1323,20 @@ body {
 
 @media screen and (min-width: 40em) and (min-width: 1300px) {
   .page-wrapper .sidebar:before {
-    height: 1125px;
+    height: 1180px;
     width: 33.5vw;
   }
 }
 
 @media screen and (min-width: 40em) and (min-width: 1400px) {
   .page-wrapper .sidebar:before {
-    height: 1135px;
+    height: 1190px;
   }
 }
 
 @media screen and (min-width: 40em) and (min-width: 1600px) {
   .page-wrapper .sidebar:before {
-    height: 1145px;
+    height: 1200px;
   }
 }
 
@@ -1331,7 +1350,7 @@ body {
 @media screen and (min-width: 40em) and (min-width: 2000px) {
   .page-wrapper .sidebar:before {
     height: 1170px;
-    width: 35vw;
+    width: 34.5vw;
   }
 }
 
