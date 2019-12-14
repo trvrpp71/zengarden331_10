@@ -35,7 +35,7 @@
 
 
 .summary {
-    
+    z-index: 2;
     @media screen and (min-width: 40em) {
         margin: 0 10px 10px 10px;  
         width: 60vw;   
@@ -49,13 +49,13 @@
     }
     @media screen and (min-width: 1300px) {
         width: 57vw;
-        p {
+        p {           
             padding-right: 8vw;  
             &:after {
             content: '';
             background-image: url('assets/images/earth86.png');  
             background-repeat: no-repeat;       
-            width: 100%;
+            width: 100px;
             height: 100%;
             position: absolute; 
             top: 20%;

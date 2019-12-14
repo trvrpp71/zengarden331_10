@@ -23,9 +23,6 @@ body {
 		text-align: center;
 	}
 	.intro {	
-		
-		z-index: 2;
-		
 		@media screen and (max-width: 39.9em) { 
 			order:1;
 		}
